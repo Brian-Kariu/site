@@ -13,7 +13,7 @@ Recommended extensions for VSCode:
 - Tailwind CSS IntelliSense.
 - Astro.
 
-Clone or fork the repository;
+Clone or fork the repository:
 ```bash
 git@github.com:Brian-Kariu/blog.git
 ```
