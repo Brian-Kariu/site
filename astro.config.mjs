@@ -2,6 +2,7 @@ import { defineConfig, squooshImageService } from 'astro/config'
 import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
 import tailwind from '@astrojs/tailwind'
+import icon from "astro-icon";
 import { remarkReadingTime } from './src/utils/readTime.ts'
 
 // https://astro.build/config
@@ -10,7 +11,7 @@ export default defineConfig({
 		service: squooshImageService(),
 	},
 	site: 'https://Brian-Kariu.github.io', // Write here your website url
-	base: '/blog',
+	base: '/site',
 	markdown: {
 		remarkPlugins: [remarkReadingTime],
 		drafts: true,
@@ -32,6 +33,7 @@ export default defineConfig({
 			drafts: true
 		}),
 		sitemap(),
+		icon(),
 		tailwind()
 	]
 })
