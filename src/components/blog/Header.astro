@@ -1,10 +1,10 @@
 ---
-import HeaderLink from '@/components/HeaderLink'
+import HeaderLink from '@/components/blog/HeaderLink'
 import TwitterIcon from '@/components/icons/TwitterIcon'
 import GithubIcon from '@/components/icons/GithubIcon'
-import MenuIcon from './icons/MenuIcon.astro'
-import Search from '@/components/Search'
-import TagIcon from './icons/TagIcon.astro'
+import MenuIcon from '../icons/MenuIcon.astro'
+import Search from '@/components/blog/Search'
+import TagIcon from '../icons/TagIcon.astro'
 import ToggleTheme from './ToggleTheme.astro'
 
 // ADD YOUR SOCIAL NETWORKS HERE
@@ -26,7 +26,7 @@ const SOCIALNETWORKS = [
 
 <header class='relative flex items-center h-12 font-semibold'>
 	<a class='text-lg mr-auto' href='/site/blog'>Home</a>
-	<a class='text-lg ml-auto' href='/site/portfolio'>Portfolio</a>
+	<a class='text-lg ml-auto' href='/site'>Portfolio</a>
 
 	<div
 		id='astro-header-drawer'

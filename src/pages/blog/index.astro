@@ -1,7 +1,7 @@
 ---
-import ListCategories from '@/components/ListCategories'
-import ListPosts from '@/components/ListPosts'
-import TitlePage from '@/components/TitlePage'
+import ListCategories from '@/components/blog/ListCategories'
+import ListPosts from '@/components/blog/ListPosts'
+import TitlePage from '@/components/blog/TitlePage'
 import BaseLayout from '@/layouts/BaseLayout'
 import { getPosts } from '@/utils'
 
@@ -10,7 +10,7 @@ const posts = await getPosts(MAX_POSTS)
 ---
 
 <BaseLayout title='Home'>
-	<TitlePage title='Welcome to my Blog!' />
+	<TitlePage title='👋 Welcome to my Blog!' />
 	<ListCategories />
 
 	<div>

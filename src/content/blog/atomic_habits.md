@@ -1,7 +1,7 @@
 ---
 title: 'Atomic Habits'
 description: 'Atomic Habits by James Clear'
-pubDate: 'Aug 16 2018'
+pubDate: 'April 09 2024'
 heroImage: '../../assets/images/atomic_habits.jpg'
 category: 'Book Reviews and Recommendations'
 tags: ['productivity', 'self-help']
