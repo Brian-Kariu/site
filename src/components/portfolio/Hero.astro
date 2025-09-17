@@ -1,32 +1,69 @@
 ---
-import heroImage from '../../assets/images/hero.png'
-import Button from '@/components/portfolio/ui/Button'
+import heroImage from '../../assets/images/coderback.jpg'
+import { Button } from '@/components/ui.astro/button.tsx'
 import { Image } from 'astro:assets'
+import { cn } from '@/lib/utils'
+import { motion } from 'framer-motion'
+
+const containerVariants = {
+	hidden: { opacity: 0 },
+	visible: {
+		opacity: 1,
+		transition: {
+			staggerChildren: 0.2,
+			delayChildren: 0.3
+		}
+	}
+}
+
+const itemVariants = {
+	hidden: { y: 20, opacity: 0 },
+	visible: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			duration: 0.5,
+			ease: 'easeOut'
+		}
+	}
+}
+
+const socialIconVariants = {
+	hidden: { scale: 0 },
+	visible: {
+		scale: 1,
+		transition: {
+			type: 'spring',
+			stiffness: 260,
+			damping: 20
+		}
+	},
+	hover: {
+		scale: 1.1,
+		rotate: [0, -10, 10, -10, 0],
+		transition: {
+			duration: 0.4
+		}
+	}
+}
 ---
 
 <section
 	data-testid='hero'
-	class='flex h-screen flex-col-reverse items-center justify-center text-center lg:flex-row'
+	class='flex h-screen overflow-hidden flex-col-reverse items-center justify-center text-center lg:flex-row bg-white dark:bg-black mx-7'
 >
-	<div class='mb-10 flex flex-col items-center lg:mb-0 lg:w-1/2'>
+	<div class='z-50 mb-10 flex flex-col items-center lg:mb-0 lg:w-1/2'>
 		<div>
 			<h1 class='mb-10 font-monospace text-3xl text-black dark:text-white lg:text-5xl'>
-				Hi! My name is <span class='text-orange'>Brian</span> and I am a web developer based in
-				Nairobi, Kenya.
+				Hi! My name is <span class='text-orange'>Brian</span> and I am a web developer based in Nairobi,
+				Kenya.
 			</h1>
 		</div>
 		<div class='mb-10'>
-			<Button style={'primary'} size={'lg'} class={'flex'} name='learn more'>Learn more</Button>
+			<Button className={'default sm '} href='#about' name='learn more'>Learn more</Button>
 		</div>
 	</div>
-	<div data-testid='hero-img' class='mb-10 flex w-1/2 items-center justify-center'>
-		<Image
-			src={heroImage}
-			alt='Coding girl'
-			format='png'
-			width={600}
-			height={600}
-			loading='eager'
-		/>
+	<div data-testid='hero-img' class='z-50 mb-10 flex w-1/2 items-center justify-center'>
+		<Image src={heroImage} alt='avatar' format='png' width={300} height={300} loading='eager' />
 	</div>
 </section>

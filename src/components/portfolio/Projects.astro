@@ -10,18 +10,29 @@ const projects = await getCollection('projects', ({ data }) => {
 <section
 	data-testid='projects'
 	id='projects'
-	class='mb-10 flex flex-col items-center justify-center md:mb-0 md:h-screen'
+	class='z-50 min-h-[800px] max-h-[1200px] h-screen bg-white dark:bg-black mb-10 flex flex-col items-center justify-center'
 >
-	<h2 class='font-monospace text-2xl text-orange lg:text-4xl'>Projects</h2>
-	<span class='mb-10 h-1 w-10 bg-orange'></span>
-	<div class='mb-10 flex w-full flex-col justify-center flex-wrap items-center md:flex-row'>
+	<div
+		class='w-full bg-white border-4 border-black dark:bg-black
+                            shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-white
+                            transform hover:-translate-y-1 hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]
+                            transition-all duration-300 p-6 mb-10'
+	>
+		<h1 class='z-50 text-4xl md:text-5xl font-black text-black text-center dark:text-white'>
+			Projects 🚀
+		</h1>
+	</div>
+	<div
+		class='z-50 mb-10 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-center'
+	>
 		{
 			projects.map((project) => (
 				<Card
-					url={project.data.link}
 					title={project.data.title}
+					category={project.data.category}
+					repo={project.data.repo}
+					link={project.data.link}
 					description={project.data.description}
-					alt={project.data.img_alt}
 					tags={project.data.tags}
 				/>
 			))
@@ -31,12 +42,12 @@ const projects = await getCollection('projects', ({ data }) => {
 		href='https://github.com/'
 		target='_blank'
 		rel='noopener'
-		class='flex flex-row text-black hover:text-orange dark:text-white dark:hover:text-orange'
+		class='z-50 flex flex-row text-black hover:text-orange dark:text-white dark:hover:text-orange'
 		aria-label='link to repository'
 	>
 		View full private projects archive
 		<svg
-			xmlns='http://www.w3.org/2000/svg'
+			xmlns='http://github.com/Brian-Kariu/?tab=repositories'
 			fill='none'
 			viewBox='0 0 24 24'
 			stroke-width='1.5'

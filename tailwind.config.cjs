@@ -1,23 +1,23 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
-const plugin = require('tailwindcss/plugin');
-const colors = require('tailwindcss/colors')
+const defaultTheme = require("tailwindcss/defaultTheme");
+const plugin = require("tailwindcss/plugin");
+const colors = require("tailwindcss/colors");
 
 module.exports = {
-	darkMode: 'class',
-	content: ['./src/**/*.{astro,html,js,md,mdx,ts}'],
+	darkMode: "class",
+	content: ["./src/**/*.{astro,html,js,md,mdx,ts,jsx,tsx}"],
 	theme: {
 		screens: {
-			xs: '480px',
-			sm: '640px',
-			md: '768px',
-			lg: '1024px',
-			xl: '1280px',
+			xs: "480px",
+			sm: "640px",
+			md: "768px",
+			lg: "1024px",
+			xl: "1280px",
 		},
 		colors: {
-			black: '#000',
-			white: '#fff',
-			orange: '#E06330',
+			black: "#000",
+			white: "#fff",
+			orange: "#E06330",
 			zinc: colors.zinc,
 			gray: colors.gray,
 			blue: colors.blue,
@@ -31,13 +31,85 @@ module.exports = {
 		},
 		extend: {
 			fontFamily: {
-				body: ['Manrope', ...defaultTheme.fontFamily.sans]
+				body: ["Manrope", ...defaultTheme.fontFamily.sans],
 			},
 			gridTemplateColumns: {
-				list: 'repeat(auto-fill, minmax(400px, max-content))'
-			}
-		}
+				list: "repeat(auto-fill, minmax(400px, max-content))",
+			},
+			boxShadow: {
+				shadow: "var(--shadow)",
+			},
+			translate: {
+				boxShadowX: "4px",
+				boxShadowY: "4px",
+				reverseBoxShadowX: "-4px",
+				reverseBoxShadowY: "-4px",
+			},
+			fontWeight: {
+				base: "500",
+				heading: "700",
+			},
+			borderRadius: {
+				base: "5px",
+				lg: "var(--radius)",
+				md: "calc(var(--radius) - 2px)",
+				sm: "calc(var(--radius) - 4px)",
+			},
+			colors: {
+				background: "hsl(var(--background))",
+				foreground: "hsl(var(--foreground))",
+				card: {
+					DEFAULT: "hsl(var(--card))",
+					foreground: "hsl(var(--card-foreground))",
+				},
+				popover: {
+					DEFAULT: "hsl(var(--popover))",
+					foreground: "hsl(var(--popover-foreground))",
+				},
+				primary: {
+					DEFAULT: "hsl(var(--primary))",
+					foreground: "hsl(var(--primary-foreground))",
+				},
+				secondary: {
+					DEFAULT: "hsl(var(--secondary))",
+					foreground: "hsl(var(--secondary-foreground))",
+				},
+				muted: {
+					DEFAULT: "hsl(var(--muted))",
+					foreground: "hsl(var(--muted-foreground))",
+				},
+				accent: {
+					DEFAULT: "hsl(var(--accent))",
+					foreground: "hsl(var(--accent-foreground))",
+				},
+				destructive: {
+					DEFAULT: "hsl(var(--destructive))",
+					foreground: "hsl(var(--destructive-foreground))",
+				},
+				border: "hsl(var(--border))",
+				input: "hsl(var(--input))",
+				ring: "hsl(var(--ring))",
+				chart: {
+					1: "hsl(var(--chart-1))",
+					2: "hsl(var(--chart-2))",
+					3: "hsl(var(--chart-3))",
+					4: "hsl(var(--chart-4))",
+					5: "hsl(var(--chart-5))",
+				},
+				main: "var(--main)",
+				overlay: "var(--overlay)",
+				bg: "var(--bg)",
+				bw: "var(--bw)",
+				blank: "var(--blank)",
+				text: "var(--text)",
+				mtext: "var(--mtext)",
+				border: "var(--border)",
+				ring: "var(--ring)",
+				ringOffset: "var(--ring-offset)",
+				secondaryBlack: "#212121",
+			},
+		},
 	},
-	
-	plugins: [require('@tailwindcss/typography')]
-}
+
+	plugins: [require("@tailwindcss/typography"), require("tailwindcss-animate")],
+};

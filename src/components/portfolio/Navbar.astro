@@ -1,55 +1,81 @@
 ---
-import Button from '@/components/portfolio/ui/Button'
-import ToggleTheme from '@/components/portfolio/ui/ToggleTheme'
-import { Astronav, MenuIcon, MenuItems } from 'astro-navbar'
+import { ExternalLink } from 'lucide-react'
+import { MenuItems } from 'astro-navbar'
+import ToggleTheme from './ui/ToggleTheme.astro'
+import { Button } from '@/components/ui.astro/button.tsx'
+import { ResizablePanelGroup } from '@/components/ui.astro/resizable.tsx'
 
 const menuitems = [
 	{
 		title: 'About',
-		path: '#about'
+		path: 'about'
 	},
 	{
 		title: 'Projects',
-		path: '#projects'
-	},
-	{
-		title: 'Blog',
-		path: '/site/blog'
+		path: 'projects'
 	},
 	{
 		title: 'Contact',
-		path: '#contact'
+		path: 'contact'
 	}
 ]
 ---
 
-<header data-testId='header' class='my-5 flex flex-col items-center justify-between lg:flex-row'>
-	<Astronav>
-		<div class='flex w-full items-center justify-between lg:w-auto'>
-			<Button size={'sm'} name='Download CV'>Download CV</Button>
-			<div class='block lg:hidden'>
-				<MenuIcon class='h-4 w-4 text-black dark:text-white' />
+<script>
+	const buttons = document.querySelectorAll('button#nav-button')
+
+	buttons.forEach((button) => {
+		button.addEventListener('click', () => {
+			const elementId = button.getAttribute('href')
+			const element = document.getElementById(elementId)
+			element?.scrollIntoView({
+				behavior: 'smooth',
+				block: 'end',
+				inline: 'nearest'
+			})
+		})
+	})
+</script>
+
+<header data-testId='header'>
+	<MenuItems class='my-5 flex flex-col items-center justify-center lg:flex-row mx-9'>
+		<ResizablePanelGroup
+			direction='horizontal'
+			className='rounded-base border-2 border-border text-mtext shadow-shadow flex justify-between items-center px-3'
+		>
+			<ToggleTheme />
+
+			<div class='flex flex-col my-2 lg:flex-row lg:gap-3'>
+				<ul class='flex flex-col lg:flex-row lg:gap-3'>
+					{
+						menuitems.map((item) => (
+							<>
+								<li>
+									<Button
+										id='nav-button'
+										aria-label='navigation link'
+										target={'_self'}
+										href={item.path}
+										class='flex py-2 lg:px-3'
+										client:load
+									>
+										{item.title}
+									</Button>
+								</li>
+							</>
+						))
+					}
+				</ul>
+				<Button
+					aria-label='navigation link'
+					target={'_self'}
+					href='/blog'
+					class='flex py-2 lg:px-3'
+					client:load
+				>
+					Blog <ExternalLink />
+				</Button>
 			</div>
-		</div>
-		<MenuItems class='mt-2 hidden w-full lg:mt-0 lg:flex lg:w-auto'>
-			<ul class='flex flex-col lg:flex-row lg:gap-3'>
-				{
-					menuitems.map((item) => (
-						<>
-							<li>
-								<a
-									aria-label='navigation link'
-									href={item.path}
-									class='flex py-2 text-black hover:text-orange dark:text-white dark:hover:text-orange lg:px-3'
-								>
-									{item.title}
-								</a>
-							</li>
-						</>
-					))
-				}
-				<li><ToggleTheme /></li>
-			</ul>
-		</MenuItems>
-	</Astronav>
+		</ResizablePanelGroup>
+	</MenuItems>
 </header>

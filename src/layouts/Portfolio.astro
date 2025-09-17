@@ -1,0 +1,51 @@
+---
+import Footer from '@/components/portfolio/Footer'
+import { SEO } from 'astro-seo'
+import NavBar from '@/components/portfolio/Navbar'
+import '../styles/portfolio.css'
+import { ScrollArea } from '@/components/ui.astro/scroll-area.tsx'
+
+export interface LayoutProps {
+	title: string
+}
+
+const { title = 'Brian Kariu | Software Engineer' } = Astro.props as LayoutProps
+---
+
+<!doctype html>
+<style>
+	@import '../styles/portfolio.css';
+</style>
+<html lang='en' class='scroll-smooth' data-testid='html'>
+	<head>
+		<SEO
+			title='Portfolio for Brian Kariu'
+			description='porfolio site for brian kariu, an innovative software engineer'
+		/>
+		<meta charset='UTF-8' />
+		<meta name='viewport' content='width=device-width' />
+		<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+		<meta name='generator' content={Astro.generator} />
+		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+
+		<title>{title}</title>
+	</head>
+	<body
+		class='min-h-screen px-8 justify-center items-center md:px-10 lg:px-12 bg-white py-8 font-sans text-text dark:text-secondaryBlack dark:bg-black xs:text-[16px] md:text-[18px]'
+	>
+		<ScrollArea
+			className='bg-main p-4 border-2 bg-white dark:border-dark Border shadow-light dark:bg-black border-border text-mtext shadow-shadow'
+		>
+			<NavBar />
+			<slot />
+			<Footer />
+			<style is:global>
+				/* Improve Page speed */
+				/* https://css-tricks.com/almanac/properties/c/content-visibility/ */
+				img {
+					content-visibility: auto;
+				}
+			</style>
+		</ScrollArea>
+	</body>
+</html>
