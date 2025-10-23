@@ -43,15 +43,26 @@ import { Toggle } from './toggle.tsx'
 			document.documentElement.classList.toggle('dark')
 			if (document.documentElement.classList.contains('dark')) {
 				localStorage.setItem('theme', 'dark')
+			} else {
+				localStorage.setItem('theme', 'light')
 			}
 		}
 
-		if (
-			localStorage.theme === 'dark' ||
-			(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-		) {
-			switchTheme()
+		// Initialize theme based on localStorage or system preference
+		const initTheme = () => {
+			if (
+				localStorage.theme === 'dark' ||
+				(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+			) {
+				document.documentElement.classList.add('dark')
+				button.checked = true
+			} else {
+				document.documentElement.classList.remove('dark')
+				button.checked = false
+			}
 		}
+
+		initTheme()
 
 		button.addEventListener('click', () => {
 			switchTheme()

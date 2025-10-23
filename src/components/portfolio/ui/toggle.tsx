@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui.astro/button.tsx'
@@ -8,9 +8,23 @@ import { Moon } from 'lucide-react'
 const Toggle = () => {
 	const [darkMode, setDarkMode] = useState(false)
 
+	// Sync with system theme and localStorage on mount
+	useEffect(() => {
+		const isDark = document.documentElement.classList.contains('dark')
+		setDarkMode(isDark)
+	}, [])
+
 	const toggleMode = () => {
-		setDarkMode((prev) => !prev)
-		document.documentElement.classList.toggle('dark')
+		const newDarkMode = !darkMode
+		setDarkMode(newDarkMode)
+
+		if (newDarkMode) {
+			document.documentElement.classList.add('dark')
+			localStorage.setItem('theme', 'dark')
+		} else {
+			document.documentElement.classList.remove('dark')
+			localStorage.setItem('theme', 'light')
+		}
 	}
 
 	return (

@@ -13,7 +13,7 @@ import {
 import { Slider } from '@/components/ui.astro/slider.tsx'
 
 const CustomCarousel = () => {
-	const plugin = React.useRef(Autoplay({ delay: 2000, stopOnInteraction: true }))
+	const plugin = React.useRef(Autoplay({ delay: 4000, stopOnInteraction: true }))
 	const experiencesItems = [
 		{
 			company: 'Savannah Informatics',
@@ -63,7 +63,7 @@ const CustomCarousel = () => {
 					{experiencesItems.map((items, index) => (
 						<CarouselItem key={index} className='pt-1 md:basis-1/2'>
 							<div className='p-1'>
-								<Card className='shadow-none bg-white  dark:bg-black dark:text-white'>
+								<Card className='shadow-none bg-white  dark:bg-background dark:text-white'>
 									<CardContent className='flex flex-row items-center gap-5 justify-center p-4 '>
 										<div className='w-1/4 flex items-center justify-center text-xl max-sm:text-base'>
 											{items.year[0]} - {items.year[1]}
@@ -73,7 +73,7 @@ const CustomCarousel = () => {
 												<h2>{items.company}</h2>
 												<code className='text-orange'>{items.role}</code>
 											</div>
-											<p className=' w-full text-sm text-primary '>{items.experience}</p>
+											<p className=' w-full text-sm '>{items.experience}</p>
 										</div>
 									</CardContent>
 								</Card>

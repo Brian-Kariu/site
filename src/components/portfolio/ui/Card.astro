@@ -38,19 +38,21 @@ const isVisible = link ? true : false
 ---
 
 <section class='w-full h-full'>
-	<Card className='w-full h-full bg-white transform transition-transform hover:scale-105'>
+	<Card
+		className='w-full h-full bg-card-foreground dark:bg-card transform transition-transform hover:scale-105'
+	>
 		<CardHeader>
-			<h1 class='text-xl text-orange'>{title}</h1>
-			<code class='text-xs'>{category}</code>
+			<h1 class='text-xl text-orange dark:text-destructive'>{title}</h1>
+			<code class='text-xs dark:text-white'>{category}</code>
 		</CardHeader>
 		<CardContent>
-			<p class='mb-4 text-sm'>{description}</p>
+			<p class='mb-4 text-sm dark:text-white'>{description}</p>
 			<div class='flex flex-wrap gap-2 mb-4'>
 				{
 					tags.map((tech, index) => (
 						<Badge
 							key={index}
-							className='flex justify-center bg-yellow-200 whitespace-nowrap text-center'
+							className='flex justify-center bg-yellow-200 dark:bg-yellow-600 text-black dark:text-white whitespace-nowrap text-center'
 						>
 							{tech}
 						</Badge>
@@ -64,7 +66,7 @@ const isVisible = link ? true : false
 					href={repo}
 					target='_blank'
 					rel='noopener noreferrer'
-					class='flex items-center gap-2 px-4 py-2 text-black font-bold transform transition-transform hover:-translate-y-1 hover:shadow-lg dark:text-black'
+					class='flex items-center gap-2 px-4 py-2 bg-blue-400 dark:text-white font-bold transform transition-transform hover:-translate-y-1 hover:shadow-lg'
 					style={{
 						border: '2px solid black',
 						boxShadow: '4px 4px 0px 0px #000000'
@@ -77,7 +79,7 @@ const isVisible = link ? true : false
 					href={link}
 					target='_blank'
 					rel='noopener noreferrer'
-					class=`${isVisible ? 'block' : 'hidden'} flex items-center gap-2 px-4 py-2  text-black font-bold transform transition-transform hover:-translate-y-1 hover:shadow-lg dark:text-black`
+					class=`${isVisible ? 'block' : 'hidden'} flex items-center gap-2 px-4 py-2  text-black  font-bold transform transition-transform hover:-translate-y-1 hover:shadow-lg bg-green-400 dark:text-white`
 					style={{
 						border: '2px solid black',
 						boxShadow: '4px 4px 0px 0px #000000'

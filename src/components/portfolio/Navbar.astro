@@ -1,9 +1,10 @@
 ---
 import { ExternalLink } from 'lucide-react'
 import { MenuItems } from 'astro-navbar'
-import ToggleTheme from './ui/ToggleTheme.astro'
+import { Toggle } from './ui/toggle.tsx'
 import { Button } from '@/components/ui.astro/button.tsx'
 import { ResizablePanelGroup } from '@/components/ui.astro/resizable.tsx'
+import { MobileNav } from './ui/MobileNav.tsx'
 
 const menuitems = [
 	{
@@ -38,15 +39,17 @@ const menuitems = [
 </script>
 
 <header data-testId='header'>
-	<MenuItems class='my-5 flex flex-col items-center justify-center lg:flex-row mx-9'>
+	<MenuItems class='flex flex-col items-center justify-center lg:flex-row mx-9'>
 		<ResizablePanelGroup
 			direction='horizontal'
-			className='rounded-base border-2 border-border text-mtext shadow-shadow flex justify-between items-center px-3'
+			className='bg-card-foreground dark:bg-[#212121] rounded-base border-2 border-border text-mtext shadow-shadow flex justify-between items-center px-3'
 		>
-			<ToggleTheme />
+			<Toggle client:load />
 
-			<div class='flex flex-col my-2 lg:flex-row lg:gap-3'>
-				<ul class='flex flex-col lg:flex-row lg:gap-3'>
+			<div
+				class='hidden md:flex flex-row my-2 sm:gap-1 md:gap-3 lg:gap-3 justify-end md:w-11/12 lg:1/3'
+			>
+				<ul class='flex flex-row md:gap-3 lg:gap-3'>
 					{
 						menuitems.map((item) => (
 							<>
@@ -70,12 +73,13 @@ const menuitems = [
 					aria-label='navigation link'
 					target={'_self'}
 					href='/blog'
-					class='flex py-2 lg:px-3'
+					class='flex my-2 lg:px-3'
 					client:load
 				>
 					Blog <ExternalLink />
 				</Button>
 			</div>
+			<MobileNav menuitems={menuitems} client:load />
 		</ResizablePanelGroup>
 	</MenuItems>
 </header>
