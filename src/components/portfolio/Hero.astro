@@ -1,32 +1,105 @@
 ---
-import heroImage from '../../assets/images/hero.png'
-import Button from '@/components/portfolio/ui/Button'
+import heroImage from '../../assets/images/workspace_banner.png'
+import { Button } from '@/components/ui.astro/button.tsx'
 import { Image } from 'astro:assets'
+import { cn } from '@/lib/utils'
+import { motion } from 'framer-motion'
+
+import Social from '@/components/portfolio/ui/Social'
+
+const containerVariants = {
+	hidden: { opacity: 0 },
+	visible: {
+		opacity: 1,
+		transition: {
+			staggerChildren: 0.2,
+			delayChildren: 0.3
+		}
+	}
+}
+
+const itemVariants = {
+	hidden: { y: 20, opacity: 0 },
+	visible: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			duration: 0.5,
+			ease: 'easeOut'
+		}
+	}
+}
+
+const socialIconVariants = {
+	hidden: { scale: 0 },
+	visible: {
+		scale: 1,
+		transition: {
+			type: 'spring',
+			stiffness: 260,
+			damping: 20
+		}
+	},
+	hover: {
+		scale: 1.1,
+		rotate: [0, -10, 10, -10, 0],
+		transition: {
+			duration: 0.4
+		}
+	}
+}
 ---
 
 <section
 	data-testid='hero'
-	class='flex h-screen flex-col-reverse items-center justify-center text-center lg:flex-row'
+	class='relative h-1/3 max-h-[120vh] flex items-center justify-center overflow-hidden'
 >
-	<div class='mb-10 flex flex-col items-center lg:mb-0 lg:w-1/2'>
-		<div>
-			<h1 class='mb-10 font-monospace text-3xl text-black dark:text-white lg:text-5xl'>
-				Hi! My name is <span class='text-orange'>Brian</span> and I am a web developer based in
-				Nairobi, Kenya.
-			</h1>
-		</div>
-		<div class='mb-10'>
-			<Button style={'primary'} size={'lg'} class={'flex'} name='learn more'>Learn more</Button>
+	<!-- Content Container -->
+	<div class='relative z-10 w-full max-w-[90vw] mx-auto px-4 sm:px-6 lg:px-8 h-full'>
+		<div class='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center h-full py-16 lg:py-20'>
+			<!-- Text Content -->
+			<div class='flex flex-col justify-center space-y-8 text-center lg:text-left lg:space-y-6'>
+				<h1
+					class='text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-black dark:text-white leading-tight'
+				>
+					Hi! My name is <span class='text-orange'>Brian</span> and I am a software engineer
+				</h1>
+				<p
+					class='text-xl sm:text-2xl md:text-2xl lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-none lg:max-w-lg mx-auto lg:mx-0'
+				>
+					Based in Nairobi, Kenya. My expertise ranges mostly on working in data engineering and
+					backend with some frontend skills. Outside of work, I'm usually drawing, playing video
+					games, reading, or doing side projects.
+				</p>
+				<div class='flex flex-row gap-4 pt-6 lg:pt-4 justify-center lg:justify-start'>
+					<Social />
+				</div>
+			</div>
+
+			<!-- Image Container - Hidden on medium and smaller screens -->
+			<div
+				class='hidden lg:block relative lg:absolute lg:right-0 lg:top-0 lg:w-[55%] lg:h-full flex items-center justify-center'
+			>
+				<div
+					class='relative w-full max-w-lg lg:max-w-none lg:w-full lg:h-full flex items-center justify-end'
+				>
+					<Image
+						src={heroImage}
+						alt='workspace banner'
+						format='png'
+						width={1000}
+						height={800}
+						class='w-full h-auto max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-none lg:w-full lg:h-full object-contain object-right scale-x-[-1] drop-shadow-2xl'
+						loading='eager'
+					/>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div data-testid='hero-img' class='mb-10 flex w-1/2 items-center justify-center'>
-		<Image
-			src={heroImage}
-			alt='Coding girl'
-			format='png'
-			width={600}
-			height={600}
-			loading='eager'
-		/>
+
+	<!-- Background overlay for better text readability on mobile -->
+	<div
+		class='absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent dark:from-background dark:via-background/90 dark:to-transparent lg:hidden'
+	>
 	</div>
 </section>

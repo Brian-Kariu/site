@@ -1,0 +1,114 @@
+---
+import Footer from '@/components/portfolio/Footer'
+import { SEO } from 'astro-seo'
+import NavBar from '@/components/portfolio/Navbar'
+import '../styles/portfolio.css'
+import { ScrollArea } from '@/components/ui.astro/scroll-area.tsx'
+import { join } from 'path'
+import { AstroFont } from 'astro-font'
+
+export interface LayoutProps {
+	title: string
+}
+
+const { title = 'Brian Kariu | Software Engineer' } = Astro.props as LayoutProps
+---
+
+<!doctype html>
+<style>
+	@import '../styles/portfolio.css';
+</style>
+<html lang='en' class='scroll-smooth' data-testid='html'>
+	<head>
+		<SEO
+			title='Portfolio for Brian Kariu'
+			description='porfolio site for brian kariu, an innovative software engineer'
+		/>
+		<meta charset='UTF-8' />
+		<meta name='viewport' content='width=device-width' />
+		<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+		<meta name='generator' content={Astro.generator} />
+		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+
+		<title>{title}</title>
+
+		<AstroFont
+			config={[
+				{
+					preload: false,
+					display: 'swap',
+					name: 'Manrope',
+					fallback: 'sans-serif',
+					src: [
+						{
+							weight: '200',
+							style: 'normal',
+							path: join(process.cwd(), 'public', 'fonts', 'Manrope-ExtraLight.woff2')
+						},
+						{
+							weight: '300',
+							style: 'normal',
+							path: join(process.cwd(), 'public', 'fonts', 'Manrope-Light.woff2')
+						},
+						{
+							weight: '400',
+							style: 'normal',
+							path: join(process.cwd(), 'public', 'fonts', 'Manrope-Regular.woff2')
+						},
+						{
+							weight: '500',
+							style: 'normal',
+							path: join(process.cwd(), 'public', 'fonts', 'Manrope-Medium.woff2')
+						},
+						{
+							weight: '600',
+							style: 'normal',
+							path: join(process.cwd(), 'public', 'fonts', 'Manrope-SemiBold.woff2')
+						},
+						{
+							weight: '700',
+							preload: true,
+							style: 'normal',
+							path: join(process.cwd(), 'public', 'fonts', 'Manrope-Bold.woff2')
+						},
+						{
+							weight: '800',
+							style: 'normal',
+							path: join(process.cwd(), 'public', 'fonts', 'Manrope-ExtraBold.woff2')
+						}
+					]
+				}
+			]}
+		/>
+
+		<script is:inline>
+			// Theme initialization before page renders to prevent flash
+			if (
+				localStorage.theme === 'dark' ||
+				(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+			) {
+				document.documentElement.classList.add('dark')
+			} else {
+				document.documentElement.classList.remove('dark')
+			}
+		</script>
+	</head>
+	<body
+		class='min-h-screen px-8 justify-center items-center md:px-20 lg:px-28 bg-white py-8 font-body text-text dark:text-secondaryBlack dark:bg-secondaryBlack xs:text-[16px] md:text-[18px]'
+	>
+		<ScrollArea
+			className='bg-main p-4 border-2 bg-white dark:border-dark Border shadow-light dark:bg-black dark:bg-opacity-90 border-border text-mtext shadow-shadow'
+		>
+			<NavBar />
+			<slot />
+			<Footer />
+			<style is:global>
+				/* Improve Page speed */
+				/* https://css-tricks.com/almanac/properties/c/content-visibility/ */
+				img {
+					content-visibility: auto;
+				}
+			</style>
+		</ScrollArea>
+	</body>
+</html>

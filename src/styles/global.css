@@ -1,40 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+  
+:root {
+  --main: #a388ee;
+  --overlay: rgba(0, 0, 0, 0.8); /* background color overlay for alert dialogs, modals, etc. */
 
-@layer base {
-	/* body {
-		transition: background-color 0.5s ease;
-	} */
+  --bg: #e3dff2;
+  --bw: #fff; /* white and secondary black e.g. utility class variant would be: bg-[#fff] dark:bg-[#212121] */
+  --blank: #000; /* blank black and white */
+  --border: #000;
+  --text: #000;
+  --mtext: #000; /* text that is placed on background with main color e.g. text color of default button */
+  --ring: #000;
+  --ring-offset: #fff;
 
-	.prose code {
-		@apply text-base;
-	}
+  --border-radius: 5px;
+  --box-shadow-x: 6px;
+  --box-shadow-y: 6px;
+  --reverse-box-shadow-x: -6px;
+  --reverse-box-shadow-y: -6px;
+  --base-font-weight: 500;
+  --heading-font-weight: 700;
 
-	/* prose styles here */
-	.prose h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		@apply text-zinc-800 dark:text-zinc-100   !important;
-	}
-
-	html.dark .shiki,
-	html.dark .shiki span {
-	  color: var(--shiki-dark) !important;
-	  background-color: theme(colors.gray.900) !important;
-	}
+  --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
 }
 
-.glass {
-	background: rgba(57, 56, 56, 0.52);
-	backdrop-filter: blur(13px) saturate(150%);
-	-webkit-backdrop-filter: blur(13px) saturate(150%);
-	z-index: -1;
-}
+.dark {
+  --bg: #1c1917;
+  --bw: #212121;
+  --blank: #fff;
+  --border: #44403c;
+  --text: #e6e6e6;
+  --mtext: #000;
+  --ring: #fff;
+  --ring-offset: #000;
 
-.shadow {
-	box-shadow: -5px 3px 8px 1px rgba(0, 0, 0, 0.12);
+  --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
 }
