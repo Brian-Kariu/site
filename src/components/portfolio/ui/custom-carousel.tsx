@@ -3,6 +3,7 @@ import * as React from 'react'
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 import { Card, CardContent } from '@/components/ui.astro/card.tsx'
+import data from '@/data/data.json'
 import {
 	Carousel,
 	CarouselContent,
@@ -14,41 +15,10 @@ import { Slider } from '@/components/ui.astro/slider.tsx'
 
 const CustomCarousel = () => {
 	const plugin = React.useRef(Autoplay({ delay: 4000, stopOnInteraction: true }))
-	const experiencesItems = [
-		{
-			company: 'Savannah Informatics',
-			role: 'data engineer',
-			experience:
-				'Headed a team of data engineers and achieved all and spearheaded 3 projects end to end. Developed a semantic layer enabling data commercialization through APIs, boosting revenue by 7%. Architected LLM-driven consultation modules using LangChain & Milvus vector store, achieving 40% user adoption for the products. Designed and deployed 3+ microservices in Django (Python), handling 5k reqs/min under Kubernetes. Maintained data pipeline infrastructure with a 99.9% SLA.',
-			year: ['July, 2022', 'now'],
-			techstacks: ['airflow', 'django']
-		},
-		{
-			company: 'Vorane Studios',
-			role: 'software engineer',
-			experience:
-				'Migrated to automated deployments for our tech stack. Created an online learning platform tailored for medical professionals that led to increased revenue for the company.',
-			year: ['October, 2021', 'June, 2022'],
-			techstacks: ['django']
-		},
-		{
-			company: 'Weza Ventures',
-			role: 'software engineer',
-			experience: 'Conducted comprehensive software testing on various systems',
-			year: ['Jan, 2020', 'Jun, 2020'],
-			techstacks: ['django']
-		},
-		{
-			company: 'Jomo Kenyatta University',
-			role: 'Bachelor in Information Technology',
-			experience: 'Studied fundamentals in computer science',
-			year: ['Sep, 2017', 'Nov, 2021'],
-			techstacks: []
-		}
-	]
+	const experience = data.experience
 
 	return (
-		<div className='w-full min-h-[400px] p-6 flex justify-center flex-row gap-6'>
+		<div className='w-full min-h-[320px] 2xs:min-h-[360px] xs:min-h-[400px] p-2 2xs:p-3 xs:p-4 sm:p-6 flex justify-center flex-row gap-3 2xs:gap-4 xs:gap-6'>
 			<Carousel
 				orientation='vertical'
 				opts={{
@@ -59,21 +29,23 @@ const CustomCarousel = () => {
 				onMouseEnter={plugin.current.stop}
 				onMouseLeave={plugin.current.play}
 			>
-				<CarouselContent className='-mt-1 h-[400px]'>
-					{experiencesItems.map((items, index) => (
+				<CarouselContent className='-mt-1 h-[320px] 2xs:h-[360px] xs:h-[400px]'>
+					{experience.map((items, index) => (
 						<CarouselItem key={index} className='pt-1 md:basis-1/2'>
 							<div className='p-1'>
 								<Card className='shadow-none bg-white  dark:bg-background dark:text-white'>
-									<CardContent className='flex flex-row items-center gap-5 justify-center p-4 '>
-										<div className='w-1/4 flex items-center justify-center text-xl max-sm:text-base'>
+									<CardContent className='flex flex-col 2xs:flex-row items-center gap-2 2xs:gap-3 xs:gap-5 justify-center p-2 2xs:p-3 xs:p-4 '>
+										<div className='w-full 2xs:w-1/4 flex items-center justify-center text-xs 2xs:text-sm xs:text-base sm:text-lg text-center'>
 											{items.year[0]} - {items.year[1]}
 										</div>
-										<div className='relative w-3/4 border-l-4 border-l-[#3c3c3c] p-4 gap-3 education_point'>
+										<div className='relative w-full 2xs:w-3/4 border-l-0 2xs:border-l-4 border-t-4 2xs:border-t-0 border-l-[#3c3c3c] border-t-[#3c3c3c] p-2 2xs:p-3 xs:p-4 gap-2 2xs:gap-3 education_point'>
 											<div className='items-start justify-start'>
-												<h2>{items.company}</h2>
-												<code className='text-orange'>{items.role}</code>
+												<h2 className='text-sm 2xs:text-base xs:text-lg'>{items.company}</h2>
+												<code className='text-orange text-xs 2xs:text-sm xs:text-base'>
+													{items.role}
+												</code>
 											</div>
-											<p className=' w-full text-sm '>{items.experience}</p>
+											<p className=' w-full text-xs 2xs:text-sm xs:text-sm '>{items.experience}</p>
 										</div>
 									</CardContent>
 								</Card>

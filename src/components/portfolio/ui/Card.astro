@@ -42,17 +42,17 @@ const isVisible = link ? true : false
 		className='w-full h-full bg-card-foreground dark:bg-card transform transition-transform hover:scale-105'
 	>
 		<CardHeader>
-			<h1 class='text-xl text-orange dark:text-destructive'>{title}</h1>
+			<h1 class='text-base 2xs:text-lg xs:text-xl text-orange dark:text-destructive'>{title}</h1>
 			<code class='text-xs dark:text-white'>{category}</code>
 		</CardHeader>
 		<CardContent>
-			<p class='mb-4 text-sm dark:text-white'>{description}</p>
-			<div class='flex flex-wrap gap-2 mb-4'>
+			<p class='mb-3 2xs:mb-4 text-xs 2xs:text-sm dark:text-white'>{description}</p>
+			<div class='flex flex-wrap gap-1.5 2xs:gap-2 mb-3 2xs:mb-4'>
 				{
 					tags.map((tech, index) => (
 						<Badge
 							key={index}
-							className='flex justify-center bg-yellow-200 dark:bg-yellow-600 text-black dark:text-white whitespace-nowrap text-center'
+							className='flex justify-center bg-yellow-200 dark:bg-yellow-600 text-black dark:text-white text-[10px] 2xs:text-xs text-center px-1.5 2xs:px-2'
 						>
 							{tech}
 						</Badge>
@@ -61,31 +61,31 @@ const isVisible = link ? true : false
 			</div>
 		</CardContent>
 		<CardFooter className='flex-col gap-2'>
-			<div class='flex gap-4'>
+			<div class='flex flex-wrap gap-2 2xs:gap-3 xs:gap-4'>
 				<a
 					href={repo}
 					target='_blank'
 					rel='noopener noreferrer'
-					class='flex items-center gap-2 px-4 py-2 bg-blue-400 dark:text-white font-bold transform transition-transform hover:-translate-y-1 hover:shadow-lg'
+					class='flex items-center gap-1.5 2xs:gap-2 px-2.5 2xs:px-3 xs:px-4 py-1.5 2xs:py-2 bg-blue-400 dark:text-white text-xs 2xs:text-sm font-bold transform transition-transform hover:-translate-y-1 hover:shadow-lg'
 					style={{
 						border: '2px solid black',
 						boxShadow: '4px 4px 0px 0px #000000'
 					}}
 				>
-					<Github size={20} />
+					<Github size={16} className='2xs:w-5 2xs:h-5' />
 					Code
 				</a>
 				<a
 					href={link}
 					target='_blank'
 					rel='noopener noreferrer'
-					class=`${isVisible ? 'block' : 'hidden'} flex items-center gap-2 px-4 py-2  text-black  font-bold transform transition-transform hover:-translate-y-1 hover:shadow-lg bg-green-400 dark:text-white`
+					class=`${isVisible ? 'block' : 'hidden'} flex items-center gap-1.5 2xs:gap-2 px-2.5 2xs:px-3 xs:px-4 py-1.5 2xs:py-2  text-black  text-xs 2xs:text-sm font-bold transform transition-transform hover:-translate-y-1 hover:shadow-lg bg-green-400 dark:text-white`
 					style={{
 						border: '2px solid black',
 						boxShadow: '4px 4px 0px 0px #000000'
 					}}
 				>
-					<ExternalLink size={20} />
+					<ExternalLink size={16} className='2xs:w-5 2xs:h-5' />
 					Site
 				</a>
 			</div>

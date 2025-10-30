@@ -1,4 +1,6 @@
 ---
+import SpeedInsights from '@vercel/speed-insights/astro'
+import Analytics from '@vercel/analytics/astro'
 import BaseHead from '@/components/blog/BaseHead'
 import Header from '@/components/blog/Header'
 import Footer from '@/components/blog/Footer'
@@ -18,7 +20,7 @@ const { title, description, image, articleDate } = Astro.props
 
 	<body class='background text-stone-950 dark:bg-[#0a0910] dark:text-white'>
 		<main
-			class='px-5 sm:mx-auto sm:max-w-2xl sm:px-8 lg:px-0 antialiased md:max-w-6xl grid gap-12 mt-4 overflow-hidden md:overflow-visible'
+			class='px-3 2xs:px-4 xs:px-5 sm:mx-auto sm:max-w-2xl sm:px-8 lg:px-0 antialiased md:max-w-6xl grid gap-6 2xs:gap-8 sm:gap-12 mt-2 2xs:mt-3 xs:mt-4 overflow-hidden md:overflow-visible'
 		>
 			<Header />
 			<slot />
@@ -31,5 +33,7 @@ const { title, description, image, articleDate } = Astro.props
 				margin-left: calc(100vw - 100%); /* prevent layout shift */
 			}
 		</style>
+		<SpeedInsights />
+		<Analytics />
 	</body>
 </html>
