@@ -6,38 +6,35 @@ import MenuIcon from '../icons/MenuIcon.astro'
 import Search from '@/components/blog/Search'
 import TagIcon from '../icons/TagIcon.astro'
 import ToggleTheme from './ToggleTheme.astro'
+import data from '@/data/data.json'
 
 // ADD YOUR SOCIAL NETWORKS HERE
 const SOCIALNETWORKS = [
 	{
 		name: 'Github',
-		url: 'https://github.com/Brian-Kariu',
+		url: data.links.github,
 		icon: GithubIcon
-	},
-
-	// TODO: Add Twitter
-	{
-		name: 'Twitter',
-		url: 'https://twitter.com/home',
-		icon: TwitterIcon
 	}
 ]
 ---
 
-<header class='relative flex items-center h-12 font-semibold'>
-	<a class='text-lg mr-auto' href='/blog'>Home</a>
-	<a class='text-lg ml-auto' href='/portfolio'>Portfolio</a>
+<header class='relative flex items-center h-10 2xs:h-11 xs:h-12 font-semibold'>
+	<a class='text-sm 2xs:text-base xs:text-lg mr-auto' href='/blog'>Home</a>
+	<a class='text-sm 2xs:text-base px-2 xs:text-lg ml-auto' href='/portfolio'>Portfolio</a>
 
 	<div
 		id='astro-header-drawer'
-		class='shadow rounded-l-lg md:bg-transparent dark:md:bg-transparent dark:bg-[#0a0910] md:shadow-none md:rounded-none md:border-none md:h-auto md:static absolute transition-transform duration-300 ease-in translate-x-96 md:translate-x-0 top-12 -right-5 pl-4 pt-6 pb-4 md:p-0 h-[200px] w-[200px] z-50'
+		class='shadow rounded-l-lg md:bg-transparent dark:md:bg-transparent dark:bg-[#0a0910] md:shadow-none md:rounded-none md:border-none md:h-auto md:static absolute transition-transform duration-300 ease-in translate-x-[280px] 2xs:translate-x-[320px] xs:translate-x-96 md:translate-x-0 top-10 2xs:top-11 xs:top-12 -right-3 2xs:-right-4 xs:-right-5 pl-3 2xs:pl-4 pt-4 2xs:pt-5 xs:pt-6 pb-3 2xs:pb-4 md:p-0 h-[160px] w-[160px] 2xs:h-[180px] 2xs:w-[180px] xs:h-[200px] xs:w-[200px] z-50'
 	>
 		<nav class='flex h-full flex-col justify-between text-left md:flex-row md:w-full'>
 			<div class='text-sm flex gap-4 md:justify-end'></div>
 			<div
-				class='flex flex-col gap-4 md:flex-row md:border-r-2 border-black pr-4 dark:border-white'
+				class='flex flex-col gap-3 2xs:gap-4 md:flex-row md:border-r-2 border-black pr-3 2xs:pr-4 dark:border-white'
 			>
-				<HeaderLink href='/blog/tags' class='flex items-center gap-1 text-2xl md:text-base'>
+				<HeaderLink
+					href='/blog/tags'
+					class='flex items-center gap-1 text-lg 2xs:text-xl xs:text-2xl md:text-base'
+				>
 					<TagIcon /> Tags
 				</HeaderLink>
 			</div>
@@ -54,12 +51,16 @@ const SOCIALNETWORKS = [
 		</nav>
 	</div>
 
-	<div class='flex items-center gap-3 md:pl-3' transition:persist='navbar'>
+	<div class='flex items-center gap-2 2xs:gap-2.5 xs:gap-3 md:pl-3' transition:persist='navbar'>
 		<div>
 			<Search />
 		</div>
 		<ToggleTheme />
-		<button id='astro-header-drawer-button' type='button' class='md:ml-6 md:hidden'>
+		<button
+			id='astro-header-drawer-button'
+			type='button'
+			class='md:ml-4 2xs:md:ml-5 xs:md:ml-6 md:hidden'
+		>
 			<MenuIcon />
 			<span class='sr-only'>Show Menu</span>
 		</button>

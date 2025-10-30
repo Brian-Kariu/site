@@ -1,33 +1,35 @@
 {
-	"fullName": "Olivia Davis",
+	"fullName": "Brian Kariu",
 	"metadata": {
-		"title": "Olivia Davis - FullStack Developer",
-		"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quod magni enim facilis porro, repellat soluta distinctio deserunt veritatis nam molestiae eius nostrum natus dolor? Voluptates in iusto aspernatur illum",
+		"title": "Brian Kariu - Software Engineer",
+		"description": "I bridge the gap between application development and big data. As a Full Stack Developer and Data Engineer, I specialize in turning raw information into actionable systems. When I'm not coding or designing a new data flow, you can find me reading up on new concepts or diving into a good video game.",
 		"keywords": [
-			"Olivia Davis",
-			"New York",
-			"FullStack Developer",
+			"Brian Kariu",
+			"Nairobi, Kenya",
+			"Software Engineer",
 			"TypeScript",
 			"JavaScript",
+			"Python",
+			"Go",
 			"React",
 			"Angular",
-			"Node.js"
+			"Django",
+			"Kubernetes"
 		]
 	},
-	"typedText": ["Full Stack Guru", "Design Maestro", "Bug Resolver"],
-	"email": "oliviadavis@example.com",
-	"location": "New York, USA",
+	"typedText": ["Full Stack Dev", "Data Engineer", "Software Architect"],
+	"email": "waiganjo.brian@gmail.com",
+	"location": "Nairobi, Kenya",
 	"description": [
 		"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quod magni enim facilis porro, repellat soluta distinctio deserunt veritatis nam molestiae eius nostrum natus dolor? Voluptates in iusto aspernatur illum",
 		"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quod magni enim facilis porro.",
 		" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quod magni enim facilis porro, repellat soluta distinctio deserunt veritatis nam molestiae eius nostrum natus dolor? Voluptates in iusto aspernatur illum."
 	],
 	"links": {
-		"twitter": "https://twitter.com/kotlin",
-		"linkedin": "https://linkedin.com/in/kotlin",
-		"github": "https://github.com/kotlin",
-		"mail": "mailto:oliviadavis@example.com",
-		"blog": "https://blog.example.com"
+		"linkedin": "http://www.linkedin.com/in/brian-kariu-43b328229",
+		"github": "https://github.com/Brian-Kariu",
+		"mail": "mailto:waiganjo.brian@gmail.com.com",
+		"blog": "https://brian-kariu.me"
 	},
 	"skills": [
 		"html",
@@ -43,38 +45,90 @@
 		"git",
 		"astro"
 	],
+	"experience": [
+		{
+			"company": "Savannah Informatics",
+			"role": "data engineer",
+			"experience": "Headed a team of data engineers and spearheaded 3 projects end to end. Developed a semantic layer enabling data commercialization through APIs, boosting revenue by 7%. Architected LLM-driven consultation modules using achieving 40% user adoption for the company products. Designed and deployed 3+ microservices in Django handling 5k reqs/min using Kubernetes. Maintained data pipeline infrastructure with a 99.9% SLA.",
+			"year": ["July 2022", "Present"],
+			"techstacks": ["airflow", "django"]
+		},
+		{
+			"company": "Vorane Studios",
+			"role": "software engineer",
+			"experience": "Migrated to automated deployments for our tech stack. Created an online learning platform tailored for medical professionals that led to increased revenue for the company.",
+			"year": ["2021", "2022"],
+			"techstacks": ["django"]
+		},
+		{
+			"company": "Weza Ventures",
+			"role": "software engineer",
+			"experience": "Conducted comprehensive software testing on various systems",
+			"year": ["2020", "2021"],
+			"techstacks": ["django"]
+		},
+		{
+			"company": "Jomo Kenyatta University",
+			"role": "Bachelor in Information Technology",
+			"experience": "Studied fundamentals in computer science",
+			"year": ["2017", "2021"],
+			"techstacks": []
+		}
+	],
 	"projects": [
 		{
-			"imageSrc": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/qd1p2yaogl41ymtozppc.jpg",
-			"altText": "Connect Four game",
-			"description": "Play a game of Connect Four against another human player (alternating turns on the same computer)",
-			"codeSrc": "https://github.com/zougari47/portfolio-template",
-			"liveDemoURL": "https://github.com/zougari47/portfolio-template",
-			"technologies": ["typescript", "tailwind", "next"]
+			"inProgress": false,
+			"title": "site",
+			"category": "website",
+			"description": "Personal website written with love.",
+			"repo": "https://github.com/Brian-Kariu/site",
+			"link": "https://brian-kariu.github.io/site/",
+			"tags": ["astro.js", "react", "typescript", "tailwind"]
 		},
 		{
-			"imageSrc": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/zurpxclpp6gavavnw6d2.jpg",
-			"altText": "Entertainment web app",
-			"description": "Navigate between Home, Movies, TV Series, and Bookmarked Shows pages",
-			"codeSrc": "https://github.com/zougari47/portfolio-template",
-			"liveDemoURL": "https://github.com/zougari47/portfolio-template",
-			"technologies": ["node"]
+			"inProgress": false,
+			"title": "django chain",
+			"category": "library",
+			"description": "A Django library for seamless LangChain integration, making it easy to add LLM capabilities to your Django applications.",
+			"repo": "https://github.com/Brian-Kariu/django-chain",
+			"link": "https://brian-kariu.github.io/django-chain",
+			"tags": ["django", "python", "ai", "langchain"]
 		},
 		{
-			"imageSrc": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/mubyltw6vmbmndvlymzn.jpg",
-			"altText": "Meet landing page",
-			"description": "View the optimal layout depending on their device's screen size",
-			"codeSrc": "https://github.com/zougari47/portfolio-template",
-			"liveDemoURL": "https://github.com/zougari47/portfolio-template",
-			"technologies": ["astro", "react", "tailwind"]
+			"inProgress": false,
+			"title": "go ryuk",
+			"category": "cli",
+			"description": "Ryuk is a fast environment management tool for your projects. Manage your application configuration and secrets and sync them to your cloud repositories all in one cli.",
+			"repo": "https://github.com/Brian-Kariu/ryuk",
+			"link": "https://brian-kariu.github.io/ryuk",
+			"tags": ["go", "cli", "cobra"]
 		},
 		{
-			"imageSrc": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/lowozx0v3khn1hyggkqy.jpg",
-			"altText": "Devjobs web app",
-			"description": "Devjobs web app",
-			"codeSrc": "https://github.com/zougari47/portfolio-template",
-			"liveDemoURL": "https://github.com/zougari47/portfolio-template",
-			"technologies": ["next", "tailwind"]
+			"inProgress": false,
+			"title": "go interpreter",
+			"category": "interpreter",
+			"description": "Simple interpreter written in golang.",
+			"repo": "https://github.com/Brian-Kariu/go-interpreter",
+			"link": "https://brian-kariu.github.io/go-interpreter",
+			"tags": ["go", "interpreter"]
+		},
+		{
+			"inProgress": false,
+			"title": "cookiecutter airflow",
+			"category": "boilerplate",
+			"description": "Cookiecutter Airflow is the fastest way to get started with data orchestration with modern python tooling.",
+			"repo": "https://github.com/Brian-Kariu/cookiecutter-airflow",
+			"link": "https://brian-kariu.github.io/cookiecutter-airflow",
+			"tags": ["apache airflow", "python", "cookiecutter"]
+		},
+		{
+			"inProgress": false,
+			"title": "kenya headline vault",
+			"category": "scraping",
+			"description": "This project aims to scrape the latest data from all kenya news outlets using puppeteer and node.js.",
+			"repo": "https://github.com/Brian-Kariu/Kenyan-Headline-Vault",
+			"link": "https://github.com/Brian-Kariu/Kenyan-Headline-Vault",
+			"tags": ["javascript", "node.js", "puppeteer"]
 		}
 	]
 }

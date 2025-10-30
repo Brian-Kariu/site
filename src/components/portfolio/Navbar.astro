@@ -14,10 +14,6 @@ const menuitems = [
 	{
 		title: 'Projects',
 		path: 'projects'
-	},
-	{
-		title: 'Contact',
-		path: 'contact'
 	}
 ]
 ---
@@ -39,7 +35,7 @@ const menuitems = [
 </script>
 
 <header data-testId='header'>
-	<MenuItems class='flex flex-col items-center justify-center lg:flex-row mx-9'>
+	<MenuItems class='flex flex-col items-center justify-center lg:flex-row'>
 		<ResizablePanelGroup
 			direction='horizontal'
 			className='bg-card-foreground dark:bg-[#212121] rounded-base border-2 border-border text-mtext shadow-shadow flex justify-between items-center px-3'
@@ -69,15 +65,13 @@ const menuitems = [
 						))
 					}
 				</ul>
-				<Button
-					aria-label='navigation link'
-					target={'_self'}
+				<a
 					href='/blog'
-					class='flex my-2 lg:px-3'
-					client:load
+					aria-label='navigation link to blog'
+					class='items-center justify-center whitespace-nowrap rounded-base text-sm font-base ring-offset-white transition-all gap-2 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 text-main-foreground bg-main border-2 border-border shadow-shadow hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none h-10 px-4 py-2 flex lg:px-3'
 				>
 					Blog <ExternalLink />
-				</Button>
+				</a>
 			</div>
 			<MobileNav menuitems={menuitems} client:load />
 		</ResizablePanelGroup>
