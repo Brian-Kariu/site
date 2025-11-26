@@ -72,7 +72,7 @@
 		"@iconify-json/mdi": "^1.2.3",
 		"@pagefind/default-ui": "^1.4.0",
 		"@tailwindcss/typography": "0.5.10",
-		"@tinacms/cli": "^1.10.3",
+		"@tinacms/cli": "^1.12.5",
 		"@typescript-eslint/parser": "^8.48.0",
 		"autoprefixer": "^10.4.22",
 		"clsx": "2.0.0",
