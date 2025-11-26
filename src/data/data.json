@@ -82,7 +82,7 @@
 			"category": "website",
 			"description": "Personal website written with love.",
 			"repo": "https://github.com/Brian-Kariu/site",
-			"link": "https://brian-kariu.github.io/site/",
+			"link": "https://www.brian-kariu.me/portfolio",
 			"tags": ["astro.js", "react", "typescript", "tailwind"]
 		},
 		{
@@ -91,7 +91,7 @@
 			"category": "library",
 			"description": "A Django library for seamless LangChain integration, making it easy to add LLM capabilities to your Django applications.",
 			"repo": "https://github.com/Brian-Kariu/django-chain",
-			"link": "https://brian-kariu.github.io/django-chain",
+			"link": "https://django-chain.onrender.com/introduction/design/",
 			"tags": ["django", "python", "ai", "langchain"]
 		},
 		{
@@ -100,7 +100,7 @@
 			"category": "cli",
 			"description": "Ryuk is a fast environment management tool for your projects. Manage your application configuration and secrets and sync them to your cloud repositories all in one cli.",
 			"repo": "https://github.com/Brian-Kariu/ryuk",
-			"link": "https://brian-kariu.github.io/ryuk",
+			"link": "https://pkg.go.dev/github.com/Brian-Kariu/ryuk",
 			"tags": ["go", "cli", "cobra"]
 		},
 		{
@@ -109,7 +109,7 @@
 			"category": "interpreter",
 			"description": "Simple interpreter written in golang.",
 			"repo": "https://github.com/Brian-Kariu/go-interpreter",
-			"link": "https://brian-kariu.github.io/go-interpreter",
+			"link": "https://pkg.go.dev/github.com/Brian-Kariu/go-interpreter",
 			"tags": ["go", "interpreter"]
 		},
 		{
@@ -118,7 +118,7 @@
 			"category": "boilerplate",
 			"description": "Cookiecutter Airflow is the fastest way to get started with data orchestration with modern python tooling.",
 			"repo": "https://github.com/Brian-Kariu/cookiecutter-airflow",
-			"link": "https://brian-kariu.github.io/cookiecutter-airflow",
+			"link": "https://github.com/Brian-Kariu/cookiecutter-airflow",
 			"tags": ["apache airflow", "python", "cookiecutter"]
 		},
 		{
