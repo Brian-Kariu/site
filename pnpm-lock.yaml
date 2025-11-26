@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@astrojs/react':
         specifier: ^4.3.1
-        version: 4.3.1(@types/node@24.10.1)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(jiti@2.6.0)(lightningcss@1.30.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(yaml@2.8.1)
+        version: 4.3.1(@types/node@24.10.1)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(jiti@1.21.7)(lightningcss@1.30.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(yaml@2.8.1)
       '@astrojs/rss':
         specifier: 4.0.12
         version: 4.0.12
@@ -55,7 +55,7 @@ importers:
         version: 1.2.0(react@19.1.1)
       astro:
         specifier: 5.15.9
-        version: 5.15.9(@types/node@24.10.1)(jiti@2.6.0)(lightningcss@1.30.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)
+        version: 5.15.9(@types/node@24.10.1)(jiti@1.21.7)(lightningcss@1.30.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)
       astro-font:
         specifier: ^0.0.72
         version: 0.0.72
@@ -100,17 +100,17 @@ importers:
         version: 0.34.4
       tailwindcss-animate:
         specifier: ^1.0.7
-        version: 1.0.7(tailwindcss@3.3.5)
+        version: 1.0.7(tailwindcss@3.4.18(yaml@2.8.1))
     devDependencies:
       '@astrojs/mdx':
         specifier: 4.3.5
-        version: 4.3.5(astro@5.15.9(@types/node@24.10.1)(jiti@2.6.0)(lightningcss@1.30.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
+        version: 4.3.5(astro@5.15.9(@types/node@24.10.1)(jiti@1.21.7)(lightningcss@1.30.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))
       '@astrojs/sitemap':
         specifier: 3.6.0
         version: 3.6.0
       '@astrojs/tailwind':
         specifier: 6.0.2
-        version: 6.0.2(astro@5.15.9(@types/node@24.10.1)(jiti@2.6.0)(lightningcss@1.30.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))(tailwindcss@3.3.5)
+        version: 6.0.2(astro@5.15.9(@types/node@24.10.1)(jiti@1.21.7)(lightningcss@1.30.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))(tailwindcss@3.4.18(yaml@2.8.1))
       '@iconify-json/mdi':
         specifier: ^1.2.3
         version: 1.2.3
@@ -119,10 +119,10 @@ importers:
         version: 1.4.0
       '@tailwindcss/typography':
         specifier: 0.5.10
-        version: 0.5.10(tailwindcss@3.3.5)
+        version: 0.5.10(tailwindcss@3.4.18(yaml@2.8.1))
       '@tinacms/cli':
         specifier: ^1.10.3
-        version: 1.10.3(@codemirror/language@6.0.0)(@types/hoist-non-react-statics@3.3.7(@types/react@19.1.13))(@types/node@24.10.1)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(abstract-level@1.0.4)(immer@10.1.3)(lightningcss@1.30.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rollup@4.53.3)(scheduler@0.26.0)(slate-dom@0.114.0(slate@0.114.0))(slate@0.114.0)(sucrase@3.35.0)(use-sync-external-store@1.5.0(react@19.1.1))
+        version: 1.10.3(@codemirror/language@6.0.0)(@types/hoist-non-react-statics@3.3.7(@types/react@19.1.13))(@types/node@24.10.1)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(abstract-level@1.0.4)(immer@10.1.3)(lightningcss@1.30.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rollup@4.53.3)(scheduler@0.26.0)(slate-dom@0.114.0(slate@0.114.0))(slate@0.114.0)(sucrase@3.35.1)(use-sync-external-store@1.5.0(react@19.1.1))(yaml@2.8.1)
       '@typescript-eslint/parser':
         specifier: ^8.48.0
         version: 8.48.0(eslint@8.57.1)(typescript@5.9.2)
@@ -181,11 +181,11 @@ importers:
         specifier: 2.0.0
         version: 2.0.0
       tailwindcss:
-        specifier: 3.3.5
-        version: 3.3.5
+        specifier: 3.4.18
+        version: 3.4.18(yaml@2.8.1)
       tinacms:
         specifier: ^1.6.7
-        version: 1.6.7(@babel/core@7.28.4)(@babel/template@7.27.2)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(abstract-level@1.0.4)(jotai-optics@0.4.0(jotai@2.8.4(@types/react@19.1.13)(react@19.1.1))(optics-ts@2.4.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(scheduler@0.26.0)(sucrase@3.35.0)(typescript@5.9.2)
+        version: 1.6.7(@babel/core@7.28.4)(@babel/template@7.27.2)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(abstract-level@1.0.4)(jotai-optics@0.4.0(jotai@2.8.4(@types/react@19.1.13)(react@19.1.1))(optics-ts@2.4.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(scheduler@0.26.0)(sucrase@3.35.1)(typescript@5.9.2)
       typescript:
         specifier: ^5.9.2
         version: 5.9.2
@@ -1313,10 +1313,6 @@ packages:
       '@types/node':
         optional: true
 
-  '@isaacs/cliui@8.0.2':
-    resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
-    engines: {node: '>=12'}
-
   '@isaacs/fs-minipass@4.0.1':
     resolution: {integrity: sha512-wgm9Ehl2jpeqP3zw/7mo3kRHFp5MEDhqAdwy1fTGkHAwnkGOVsgpvQhL8B5n1qlb01jV3n/bI0ZfZp5lWA1k4w==}
     engines: {node: '>=18.0.0'}
@@ -1462,10 +1458,6 @@ packages:
     resolution: {integrity: sha512-NkT+YAdgS2FPCn8mIA9bQhiBs+xmniMGq1LFPDhcFn0+2yIUEiIG06t7bsZlhdjknEQRTSdT7YitP6fC5qwP0g==}
     cpu: [x64]
     os: [win32]
-
-  '@pkgjs/parseargs@0.11.0':
-    resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
-    engines: {node: '>=14'}
 
   '@pkgr/core@0.1.2':
     resolution: {integrity: sha512-fdDH1LSGfZdTH2sxdpVMw31BanV28K/Gry0cVFxaNP77neJSkd82mM8ErPNYs9e+0O7SdHBLTDzDgwUuy18RnQ==}
@@ -4410,9 +4402,6 @@ packages:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
 
-  eastasianwidth@0.2.0:
-    resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
-
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
@@ -4832,10 +4821,6 @@ packages:
     resolution: {integrity: sha512-dKx12eRCVIzqCxFGplyFKJMPvLEWgmNtUrpTiJIR5u97zEhRG8ySrtboPHZXx7daLxQVrl643cTzbab2tkQjxg==}
     engines: {node: '>= 0.4'}
 
-  foreground-child@3.3.1:
-    resolution: {integrity: sha512-gIXjKqtFuWEgzFRJA9WCQeSJLZDjgJUOMCMzxtvFq/37KojM1BFGufqsCy0r4qSQmYLsZYMeyRqzIWOMup03sw==}
-    engines: {node: '>=14'}
-
   form-data@4.0.4:
     resolution: {integrity: sha512-KrGhL9Q4zjj0kiUt5OO4Mr/A/jlI2jDYs5eHBpYHPcBEVSiipAvn2Ko2HnPe20rmcuuvMHNdZFp+4IlGTMF0Ow==}
     engines: {node: '>= 6'}
@@ -4967,10 +4952,6 @@ packages:
   glob-parent@6.0.2:
     resolution: {integrity: sha512-XxwI8EOhVQgWp6iDL+3b0r86f4d6AX6zSU55HfB4ydCEuXLXc5FcYeOu+nnGftS4TEju/11rt4KJPTMgbfmv4A==}
     engines: {node: '>=10.13.0'}
-
-  glob@10.4.5:
-    resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
-    hasBin: true
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
@@ -5470,15 +5451,12 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  jackspeak@3.4.3:
-    resolution: {integrity: sha512-OGlZQpz2yfahA/Rd1Y8Cd9SIEsqvXkLVoSw/cgwhnhFMDbsQFeZYoJJ7bIZBS9BcamUW96asq/npPWugM+RQBw==}
-
   jiti@1.21.7:
     resolution: {integrity: sha512-/imKNG4EbWNrVjoNC/1H5/9GFy+tqjGBHCaSsN+P2RnPqjsLmv6UD3Ej+Kj8nBWaRAwyk7kK5ZUc+OEatnTR3A==}
     hasBin: true
 
-  jiti@2.6.0:
-    resolution: {integrity: sha512-VXe6RjJkBPj0ohtqaO8vSWP3ZhAKo66fKrFNCll4BTcwljPLz03pCbaNKfzGP5MbrCYcbJ7v0nOYYwUzTEIdXQ==}
+  jiti@2.6.1:
+    resolution: {integrity: sha512-ekilCSN1jwRvIbgeg/57YFh8qQDNbwDb9xT/qu2DAHbFFZUicIl4ygVaAvzveMhMVr3LnpSKTNnwt8PoOfmKhQ==}
     hasBin: true
 
   jotai-optics@0.4.0:
@@ -5750,10 +5728,6 @@ packages:
   lightningcss@1.30.1:
     resolution: {integrity: sha512-xi6IyHML+c9+Q3W0S4fCQJOym42pyurFiJUHEcEyHS0CeKzia4yZDEsLlqOFykxOdHpNy0NmvVO31vcSqAxJCg==}
     engines: {node: '>= 12.0.0'}
-
-  lilconfig@2.1.0:
-    resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
-    engines: {node: '>=10'}
 
   lilconfig@3.1.3:
     resolution: {integrity: sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==}
@@ -6665,9 +6639,6 @@ packages:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
 
-  package-json-from-dist@1.0.1:
-    resolution: {integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==}
-
   package-manager-detector@0.2.11:
     resolution: {integrity: sha512-BEnLolu+yuz22S56CU1SUKq3XC3PkwD5wv4ikR4MfGvnRVcmzXR9DwSlW2fEamyTPyXHomBJRzgapeuBvRNzJQ==}
 
@@ -6763,10 +6734,6 @@ packages:
     resolution: {integrity: sha512-QLcPegTHF11axjfojBIoDygmS2E3Lf+8+jI6wOVmNVenrKSo3mFdSGiIgdSHenczw3wPtlVMQaFVwGmM7BJdtg==}
     engines: {node: '>=0.10.0'}
 
-  path-scurry@1.11.1:
-    resolution: {integrity: sha512-Xa4Nw17FS9ApQFJ9umLiJS4orGjm7ZzwUrwamcGQuHSzDyth9boKDaycYdDcZDuqYATXw4HFXgaqWTctW/v1HA==}
-    engines: {node: '>=16 || 14 >=14.18'}
-
   path-to-regexp@0.1.12:
     resolution: {integrity: sha512-RA1GjUVMnvYFxuqovrEqZoxxW5NUZqbwKtYz/Tt7nXerk0LbLblQmrsgdeOxV5SFHf0UDggjS/bSeOZwt1pmEQ==}
 
@@ -6853,6 +6820,24 @@ packages:
       postcss:
         optional: true
       ts-node:
+        optional: true
+
+  postcss-load-config@6.0.1:
+    resolution: {integrity: sha512-oPtTM4oerL+UXmx+93ytZVN82RrlY/wPUV8IeDxFrzIjXOLF1pN+EmKPLbubvKHT2HC20xXsCAH2Z+CKV6Oz/g==}
+    engines: {node: '>= 18'}
+    peerDependencies:
+      jiti: '>=1.21.0'
+      postcss: '>=8.0.9'
+      tsx: ^4.8.1
+      yaml: ^2.4.2
+    peerDependenciesMeta:
+      jiti:
+        optional: true
+      postcss:
+        optional: true
+      tsx:
+        optional: true
+      yaml:
         optional: true
 
   postcss-nested@6.2.0:
@@ -7352,8 +7337,8 @@ packages:
     resolution: {integrity: sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==}
     engines: {node: '>=8'}
 
-  resolve@1.22.10:
-    resolution: {integrity: sha512-NPRy+/ncIMeDlTAsuqwKIiferiawhefFJtkNSW0qZJEqMEb+qBt/77B/jGeeek+F0uOeN05CDa6HXbbIgtVX4w==}
+  resolve@1.22.11:
+    resolution: {integrity: sha512-RfqAvLnMl313r7c9oclB1HhUEAezcpLjz95wFH4LVuhk9JF/r22qmVP9AMmOU4vMX7Q8pN8jwNg/CSpdFnMjTQ==}
     engines: {node: '>= 0.4'}
     hasBin: true
 
@@ -7739,10 +7724,6 @@ packages:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
     engines: {node: '>=8'}
 
-  string-width@5.1.2:
-    resolution: {integrity: sha512-HnLOCR3vjcY8beoNLtcjZ5/nxn2afmME6lhrDrebokqMap+XbeW8n9TXpPDOqdGK5qcI3oT0GKTW6wC7EMiVqA==}
-    engines: {node: '>=12'}
-
   string-width@7.2.0:
     resolution: {integrity: sha512-tsaTIkKW9b4N+AEj+SVA+WhJzV7/zMhcSu78mLKWSk7cXMOSHsBKFWUs0fWwq8QyK3MgJBQRX6Gbi4kYbdvGkQ==}
     engines: {node: '>=18'}
@@ -7818,8 +7799,8 @@ packages:
   stylis@4.3.6:
     resolution: {integrity: sha512-yQ3rwFWRfwNUY7H5vpU0wfdkNSnvnJinhF9830Swlaxl03zsOjCfmX0ugac+3LtK0lYSgwL/KXc8oYL3mG4YFQ==}
 
-  sucrase@3.35.0:
-    resolution: {integrity: sha512-8EbVDiu9iN/nESwxeSxDKe0dunta1GOlHufmSSXxMD2z2/tMZpDMpvXQGsc+ajGo8y2uYUmixaSRUc/QPoQ0GA==}
+  sucrase@3.35.1:
+    resolution: {integrity: sha512-DhuTmvZWux4H1UOnWMB3sk0sbaCVOoQZjv8u1rDoTV0HTdGem9hkAZtl4JZy8P2z4Bg0nT+YMeOFyVr4zcG5Tw==}
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
 
@@ -7864,13 +7845,8 @@ packages:
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
 
-  tailwindcss@3.3.5:
-    resolution: {integrity: sha512-5SEZU4J7pxZgSkv7FP1zY8i2TIAOooNZ1e/OGtxIEv6GltpoiXUqWvLy89+a10qYTB1N5Ifkuw9lqQkN9sscvA==}
-    engines: {node: '>=14.0.0'}
-    hasBin: true
-
-  tailwindcss@3.4.17:
-    resolution: {integrity: sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==}
+  tailwindcss@3.4.18:
+    resolution: {integrity: sha512-6A2rnmW5xZMdw11LYjhcI5846rt9pbLSabY5XPxo+XWdxwZaFEn47Go4NzFiHu9sNNmr/kXivP1vStfvMaK1GQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -8724,10 +8700,6 @@ packages:
     resolution: {integrity: sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==}
     engines: {node: '>=10'}
 
-  wrap-ansi@8.1.0:
-    resolution: {integrity: sha512-si7QWI6zUMq56bESFvagtmzMdGOtoxfR+Sez11Mobfc7tm+VkUckk9bW2UeffTGVUbOksxmSw0AA2gs8g71NCQ==}
-    engines: {node: '>=12'}
-
   wrap-ansi@9.0.2:
     resolution: {integrity: sha512-42AtmgqjV+X1VpdOfyTGOYRi0/zsoLqtXQckTmqTeybT+BDIbM/Guxo7x3pE2vtpr1ok6xRqM9OpBe+Jyoqyww==}
     engines: {node: '>=18'}
@@ -8989,12 +8961,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.3.5(astro@5.15.9(@types/node@24.10.1)(jiti@2.6.0)(lightningcss@1.30.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))':
+  '@astrojs/mdx@4.3.5(astro@5.15.9(@types/node@24.10.1)(jiti@1.21.7)(lightningcss@1.30.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))':
     dependencies:
       '@astrojs/markdown-remark': 6.3.6
       '@mdx-js/mdx': 3.1.1
       acorn: 8.15.0
-      astro: 5.15.9(@types/node@24.10.1)(jiti@2.6.0)(lightningcss@1.30.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)
+      astro: 5.15.9(@types/node@24.10.1)(jiti@1.21.7)(lightningcss@1.30.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)
       es-module-lexer: 1.7.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -9012,15 +8984,15 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/react@4.3.1(@types/node@24.10.1)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(jiti@2.6.0)(lightningcss@1.30.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(yaml@2.8.1)':
+  '@astrojs/react@4.3.1(@types/node@24.10.1)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(jiti@1.21.7)(lightningcss@1.30.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(yaml@2.8.1)':
     dependencies:
       '@types/react': 19.1.13
       '@types/react-dom': 19.1.9(@types/react@19.1.13)
-      '@vitejs/plugin-react': 4.7.0(vite@6.3.6(@types/node@24.10.1)(jiti@2.6.0)(lightningcss@1.30.1)(yaml@2.8.1))
+      '@vitejs/plugin-react': 4.7.0(vite@6.3.6(@types/node@24.10.1)(jiti@1.21.7)(lightningcss@1.30.1)(yaml@2.8.1))
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
       ultrahtml: 1.6.0
-      vite: 6.3.6(@types/node@24.10.1)(jiti@2.6.0)(lightningcss@1.30.1)(yaml@2.8.1)
+      vite: 6.3.6(@types/node@24.10.1)(jiti@1.21.7)(lightningcss@1.30.1)(yaml@2.8.1)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -9046,13 +9018,13 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.25.76
 
-  '@astrojs/tailwind@6.0.2(astro@5.15.9(@types/node@24.10.1)(jiti@2.6.0)(lightningcss@1.30.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))(tailwindcss@3.3.5)':
+  '@astrojs/tailwind@6.0.2(astro@5.15.9(@types/node@24.10.1)(jiti@1.21.7)(lightningcss@1.30.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1))(tailwindcss@3.4.18(yaml@2.8.1))':
     dependencies:
-      astro: 5.15.9(@types/node@24.10.1)(jiti@2.6.0)(lightningcss@1.30.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)
+      astro: 5.15.9(@types/node@24.10.1)(jiti@1.21.7)(lightningcss@1.30.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1)
       autoprefixer: 10.4.22(postcss@8.5.6)
       postcss: 8.5.6
       postcss-load-config: 4.0.2(postcss@8.5.6)
-      tailwindcss: 3.3.5
+      tailwindcss: 3.4.18(yaml@2.8.1)
     transitivePeerDependencies:
       - ts-node
 
@@ -10085,15 +10057,6 @@ snapshots:
     optionalDependencies:
       '@types/node': 24.10.1
 
-  '@isaacs/cliui@8.0.2':
-    dependencies:
-      string-width: 5.1.2
-      string-width-cjs: string-width@4.2.3
-      strip-ansi: 7.1.2
-      strip-ansi-cjs: strip-ansi@6.0.1
-      wrap-ansi: 8.1.0
-      wrap-ansi-cjs: wrap-ansi@7.0.0
-
   '@isaacs/fs-minipass@4.0.1':
     dependencies:
       minipass: 7.1.2
@@ -10282,9 +10245,6 @@ snapshots:
     optional: true
 
   '@pagefind/windows-x64@1.4.0':
-    optional: true
-
-  '@pkgjs/parseargs@0.11.0':
     optional: true
 
   '@pkgr/core@0.1.2': {}
@@ -11113,19 +11073,19 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@tailwindcss/aspect-ratio@0.4.2(tailwindcss@3.4.17)':
+  '@tailwindcss/aspect-ratio@0.4.2(tailwindcss@3.4.18(yaml@2.8.1))':
     dependencies:
-      tailwindcss: 3.4.17
+      tailwindcss: 3.4.18(yaml@2.8.1)
 
-  '@tailwindcss/container-queries@0.1.1(tailwindcss@3.4.17)':
+  '@tailwindcss/container-queries@0.1.1(tailwindcss@3.4.18(yaml@2.8.1))':
     dependencies:
-      tailwindcss: 3.4.17
+      tailwindcss: 3.4.18(yaml@2.8.1)
 
   '@tailwindcss/node@4.1.13':
     dependencies:
       '@jridgewell/remapping': 2.3.5
       enhanced-resolve: 5.18.3
-      jiti: 2.6.0
+      jiti: 2.6.1
       lightningcss: 1.30.1
       magic-string: 0.30.21
       source-map-js: 1.2.1
@@ -11193,18 +11153,18 @@ snapshots:
       postcss: 8.5.6
       tailwindcss: 4.1.13
 
-  '@tailwindcss/typography@0.5.10(tailwindcss@3.3.5)':
+  '@tailwindcss/typography@0.5.10(tailwindcss@3.4.18(yaml@2.8.1))':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.3.5
+      tailwindcss: 3.4.18(yaml@2.8.1)
 
-  '@tailwindcss/typography@0.5.18(tailwindcss@3.4.17)':
+  '@tailwindcss/typography@0.5.18(tailwindcss@3.4.18(yaml@2.8.1))':
     dependencies:
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.4.17
+      tailwindcss: 3.4.18(yaml@2.8.1)
 
   '@tanstack/react-virtual@3.13.12(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
     dependencies:
@@ -11214,7 +11174,7 @@ snapshots:
 
   '@tanstack/virtual-core@3.13.12': {}
 
-  '@tinacms/app@2.3.3(@codemirror/language@6.0.0)(@types/hoist-non-react-statics@3.3.7(@types/react@19.1.13))(@types/node@24.10.1)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(abstract-level@1.0.4)(immer@10.1.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(scheduler@0.26.0)(slate-dom@0.114.0(slate@0.114.0))(slate@0.114.0)(sucrase@3.35.0)(use-sync-external-store@1.5.0(react@19.1.1))(yup@1.7.1)':
+  '@tinacms/app@2.3.3(@codemirror/language@6.0.0)(@types/hoist-non-react-statics@3.3.7(@types/react@19.1.13))(@types/node@24.10.1)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(abstract-level@1.0.4)(immer@10.1.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(scheduler@0.26.0)(slate-dom@0.114.0(slate@0.114.0))(slate@0.114.0)(sucrase@3.35.1)(use-sync-external-store@1.5.0(react@19.1.1))(yup@1.7.1)':
     dependencies:
       '@graphiql/toolkit': 0.8.4(@types/node@24.10.1)(graphql@15.8.0)
       '@headlessui/react': 2.1.8(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -11228,7 +11188,7 @@ snapshots:
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
       react-router-dom: 6.3.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      tinacms: 2.8.3(@types/hoist-non-react-statics@3.3.7(@types/react@19.1.13))(@types/node@24.10.1)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(abstract-level@1.0.4)(immer@10.1.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(scheduler@0.26.0)(slate-dom@0.114.0(slate@0.114.0))(slate@0.114.0)(sucrase@3.35.0)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1))
+      tinacms: 2.8.3(@types/hoist-non-react-statics@3.3.7(@types/react@19.1.13))(@types/node@24.10.1)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(abstract-level@1.0.4)(immer@10.1.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(scheduler@0.26.0)(slate-dom@0.114.0(slate@0.114.0))(slate@0.114.0)(sucrase@3.35.1)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1))
       typescript: 5.9.2
       zod: 3.25.76
     transitivePeerDependencies:
@@ -11250,7 +11210,7 @@ snapshots:
       - use-sync-external-store
       - yup
 
-  '@tinacms/cli@1.10.3(@codemirror/language@6.0.0)(@types/hoist-non-react-statics@3.3.7(@types/react@19.1.13))(@types/node@24.10.1)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(abstract-level@1.0.4)(immer@10.1.3)(lightningcss@1.30.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rollup@4.53.3)(scheduler@0.26.0)(slate-dom@0.114.0(slate@0.114.0))(slate@0.114.0)(sucrase@3.35.0)(use-sync-external-store@1.5.0(react@19.1.1))':
+  '@tinacms/cli@1.10.3(@codemirror/language@6.0.0)(@types/hoist-non-react-statics@3.3.7(@types/react@19.1.13))(@types/node@24.10.1)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(abstract-level@1.0.4)(immer@10.1.3)(lightningcss@1.30.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rollup@4.53.3)(scheduler@0.26.0)(slate-dom@0.114.0(slate@0.114.0))(slate@0.114.0)(sucrase@3.35.1)(use-sync-external-store@1.5.0(react@19.1.1))(yaml@2.8.1)':
     dependencies:
       '@graphql-codegen/core': 2.6.8(graphql@15.8.0)
       '@graphql-codegen/plugin-helpers': 6.1.0(graphql@15.8.0)
@@ -11262,14 +11222,14 @@ snapshots:
       '@graphql-tools/load': 7.8.14(graphql@15.8.0)
       '@rollup/pluginutils': 5.3.0(rollup@4.53.3)
       '@svgr/core': 8.1.0(typescript@5.9.2)
-      '@tailwindcss/aspect-ratio': 0.4.2(tailwindcss@3.4.17)
-      '@tailwindcss/container-queries': 0.1.1(tailwindcss@3.4.17)
-      '@tailwindcss/typography': 0.5.18(tailwindcss@3.4.17)
-      '@tinacms/app': 2.3.3(@codemirror/language@6.0.0)(@types/hoist-non-react-statics@3.3.7(@types/react@19.1.13))(@types/node@24.10.1)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(abstract-level@1.0.4)(immer@10.1.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(scheduler@0.26.0)(slate-dom@0.114.0(slate@0.114.0))(slate@0.114.0)(sucrase@3.35.0)(use-sync-external-store@1.5.0(react@19.1.1))(yup@1.7.1)
+      '@tailwindcss/aspect-ratio': 0.4.2(tailwindcss@3.4.18(yaml@2.8.1))
+      '@tailwindcss/container-queries': 0.1.1(tailwindcss@3.4.18(yaml@2.8.1))
+      '@tailwindcss/typography': 0.5.18(tailwindcss@3.4.18(yaml@2.8.1))
+      '@tinacms/app': 2.3.3(@codemirror/language@6.0.0)(@types/hoist-non-react-statics@3.3.7(@types/react@19.1.13))(@types/node@24.10.1)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(abstract-level@1.0.4)(immer@10.1.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(scheduler@0.26.0)(slate-dom@0.114.0(slate@0.114.0))(slate@0.114.0)(sucrase@3.35.1)(use-sync-external-store@1.5.0(react@19.1.1))(yup@1.7.1)
       '@tinacms/graphql': 1.6.1(react@19.1.1)(typescript@5.9.2)
       '@tinacms/metrics': 1.1.0(fs-extra@11.3.2)
       '@tinacms/schema-tools': 1.9.1(react@19.1.1)(yup@1.7.1)
-      '@tinacms/search': 1.1.1(abstract-level@1.0.4)(react@19.1.1)(sucrase@3.35.0)(typescript@5.9.2)(yup@1.7.1)
+      '@tinacms/search': 1.1.1(abstract-level@1.0.4)(react@19.1.1)(sucrase@3.35.1)(typescript@5.9.2)(yup@1.7.1)
       '@vitejs/plugin-react': 3.1.0(vite@4.5.14(@types/node@24.10.1)(lightningcss@1.30.1))
       altair-express-middleware: 7.3.6
       async-lock: 1.4.1
@@ -11298,8 +11258,8 @@ snapshots:
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
       readable-stream: 4.7.0
-      tailwindcss: 3.4.17
-      tinacms: 2.8.3(@types/hoist-non-react-statics@3.3.7(@types/react@19.1.13))(@types/node@24.10.1)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(abstract-level@1.0.4)(immer@10.1.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(scheduler@0.26.0)(slate-dom@0.114.0(slate@0.114.0))(slate@0.114.0)(sucrase@3.35.0)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1))
+      tailwindcss: 3.4.18(yaml@2.8.1)
+      tinacms: 2.8.3(@types/hoist-non-react-statics@3.3.7(@types/react@19.1.13))(@types/node@24.10.1)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(abstract-level@1.0.4)(immer@10.1.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(scheduler@0.26.0)(slate-dom@0.114.0(slate@0.114.0))(slate@0.114.0)(sucrase@3.35.1)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1))
       typanion: 3.13.0
       typescript: 5.9.2
       vite: 4.5.14(@types/node@24.10.1)(lightningcss@1.30.1)
@@ -11330,8 +11290,9 @@ snapshots:
       - sugarss
       - supports-color
       - terser
-      - ts-node
+      - tsx
       - use-sync-external-store
+      - yaml
 
   '@tinacms/graphql@1.4.37(react@19.1.1)(typescript@5.9.2)':
     dependencies:
@@ -11538,14 +11499,14 @@ snapshots:
       yup: 1.7.1
       zod: 3.25.76
 
-  '@tinacms/search@1.0.22(abstract-level@1.0.4)(react@19.1.1)(sucrase@3.35.0)(typescript@5.9.2)(yup@0.32.11)':
+  '@tinacms/search@1.0.22(abstract-level@1.0.4)(react@19.1.1)(sucrase@3.35.1)(typescript@5.9.2)(yup@0.32.11)':
     dependencies:
       '@tinacms/graphql': 1.4.37(react@19.1.1)(typescript@5.9.2)
       '@tinacms/schema-tools': 1.4.18(react@19.1.1)(yup@0.32.11)
       memory-level: 1.0.0
       node-fetch: 2.7.0
       search-index: 4.0.0(abstract-level@1.0.4)
-      sqlite-level: 1.2.1(sucrase@3.35.0)
+      sqlite-level: 1.2.1(sucrase@3.35.1)
       stopword: 2.0.8
     transitivePeerDependencies:
       - abstract-level
@@ -11557,13 +11518,13 @@ snapshots:
       - typescript
       - yup
 
-  '@tinacms/search@1.1.1(abstract-level@1.0.4)(react@19.1.1)(sucrase@3.35.0)(typescript@5.9.2)(yup@1.7.1)':
+  '@tinacms/search@1.1.1(abstract-level@1.0.4)(react@19.1.1)(sucrase@3.35.1)(typescript@5.9.2)(yup@1.7.1)':
     dependencies:
       '@tinacms/graphql': 1.6.1(react@19.1.1)(typescript@5.9.2)
       '@tinacms/schema-tools': 1.9.1(react@19.1.1)(yup@1.7.1)
       memory-level: 1.0.0
       search-index: 4.0.0(abstract-level@1.0.4)
-      sqlite-level: 1.2.1(sucrase@3.35.0)
+      sqlite-level: 1.2.1(sucrase@3.35.1)
       stopword: 3.1.5
     transitivePeerDependencies:
       - abstract-level
@@ -13339,7 +13300,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vitejs/plugin-react@4.7.0(vite@6.3.6(@types/node@24.10.1)(jiti@2.6.0)(lightningcss@1.30.1)(yaml@2.8.1))':
+  '@vitejs/plugin-react@4.7.0(vite@6.3.6(@types/node@24.10.1)(jiti@1.21.7)(lightningcss@1.30.1)(yaml@2.8.1))':
     dependencies:
       '@babel/core': 7.28.4
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.28.4)
@@ -13347,7 +13308,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-beta.27
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 6.3.6(@types/node@24.10.1)(jiti@2.6.0)(lightningcss@1.30.1)(yaml@2.8.1)
+      vite: 6.3.6(@types/node@24.10.1)(jiti@1.21.7)(lightningcss@1.30.1)(yaml@2.8.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -13597,7 +13558,7 @@ snapshots:
       - prettier-plugin-astro
       - typescript
 
-  astro@5.15.9(@types/node@24.10.1)(jiti@2.6.0)(lightningcss@1.30.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1):
+  astro@5.15.9(@types/node@24.10.1)(jiti@1.21.7)(lightningcss@1.30.1)(rollup@4.53.3)(typescript@5.9.2)(yaml@2.8.1):
     dependencies:
       '@astrojs/compiler': 2.13.0
       '@astrojs/internal-helpers': 0.7.5
@@ -13653,8 +13614,8 @@ snapshots:
       unist-util-visit: 5.0.0
       unstorage: 1.17.2
       vfile: 6.0.3
-      vite: 6.4.1(@types/node@24.10.1)(jiti@2.6.0)(lightningcss@1.30.1)(yaml@2.8.1)
-      vitefu: 1.1.1(vite@6.4.1(@types/node@24.10.1)(jiti@2.6.0)(lightningcss@1.30.1)(yaml@2.8.1))
+      vite: 6.4.1(@types/node@24.10.1)(jiti@1.21.7)(lightningcss@1.30.1)(yaml@2.8.1)
+      vitefu: 1.1.1(vite@6.4.1(@types/node@24.10.1)(jiti@1.21.7)(lightningcss@1.30.1)(yaml@2.8.1))
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.3
@@ -14558,8 +14519,6 @@ snapshots:
       es-errors: 1.3.0
       gopd: 1.2.0
 
-  eastasianwidth@0.2.0: {}
-
   ee-first@1.1.1: {}
 
   electron-to-chromium@1.5.259: {}
@@ -15204,11 +15163,6 @@ snapshots:
     dependencies:
       is-callable: 1.2.7
 
-  foreground-child@3.3.1:
-    dependencies:
-      cross-spawn: 7.0.6
-      signal-exit: 4.1.0
-
   form-data@4.0.4:
     dependencies:
       asynckit: 0.4.0
@@ -15350,15 +15304,6 @@ snapshots:
   glob-parent@6.0.2:
     dependencies:
       is-glob: 4.0.3
-
-  glob@10.4.5:
-    dependencies:
-      foreground-child: 3.3.1
-      jackspeak: 3.4.3
-      minimatch: 9.0.5
-      minipass: 7.1.2
-      package-json-from-dist: 1.0.1
-      path-scurry: 1.11.1
 
   glob@7.2.3:
     dependencies:
@@ -15940,15 +15885,9 @@ snapshots:
       sha.js: 2.4.12
       simple-get: 4.0.1
 
-  jackspeak@3.4.3:
-    dependencies:
-      '@isaacs/cliui': 8.0.2
-    optionalDependencies:
-      '@pkgjs/parseargs': 0.11.0
-
   jiti@1.21.7: {}
 
-  jiti@2.6.0: {}
+  jiti@2.6.1: {}
 
   jotai-optics@0.4.0(jotai@2.8.4(@types/react@19.1.13)(react@19.1.1))(optics-ts@2.4.1):
     dependencies:
@@ -16129,8 +16068,6 @@ snapshots:
       lightningcss-linux-x64-musl: 1.30.1
       lightningcss-win32-arm64-msvc: 1.30.1
       lightningcss-win32-x64-msvc: 1.30.1
-
-  lilconfig@2.1.0: {}
 
   lilconfig@3.1.3: {}
 
@@ -17576,8 +17513,6 @@ snapshots:
 
   p-try@2.2.0: {}
 
-  package-json-from-dist@1.0.1: {}
-
   package-manager-detector@0.2.11:
     dependencies:
       quansync: 0.2.11
@@ -17703,11 +17638,6 @@ snapshots:
     dependencies:
       path-root-regex: 0.1.2
 
-  path-scurry@1.11.1:
-    dependencies:
-      lru-cache: 10.4.3
-      minipass: 7.1.2
-
   path-to-regexp@0.1.12: {}
 
   path-type@4.0.0: {}
@@ -17762,7 +17692,7 @@ snapshots:
       postcss: 8.5.6
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
-      resolve: 1.22.10
+      resolve: 1.22.11
 
   postcss-js@4.1.0(postcss@8.5.6):
     dependencies:
@@ -17775,6 +17705,14 @@ snapshots:
       yaml: 2.8.1
     optionalDependencies:
       postcss: 8.5.6
+
+  postcss-load-config@6.0.1(jiti@1.21.7)(postcss@8.5.6)(yaml@2.8.1):
+    dependencies:
+      lilconfig: 3.1.3
+    optionalDependencies:
+      jiti: 1.21.7
+      postcss: 8.5.6
+      yaml: 2.8.1
 
   postcss-nested@6.2.0(postcss@8.5.6):
     dependencies:
@@ -18398,7 +18336,7 @@ snapshots:
 
   resolve-from@5.0.0: {}
 
-  resolve@1.22.10:
+  resolve@1.22.11:
     dependencies:
       is-core-module: 2.16.1
       path-parse: 1.0.7
@@ -18891,12 +18829,12 @@ snapshots:
 
   sprintf-js@1.0.3: {}
 
-  sqlite-level@1.2.1(sucrase@3.35.0):
+  sqlite-level@1.2.1(sucrase@3.35.1):
     dependencies:
       abstract-level: 1.0.4
       better-sqlite3: 11.10.0
       module-error: 1.0.2
-      sucrase: 3.35.0
+      sucrase: 3.35.1
 
   stack-generator@2.0.10:
     dependencies:
@@ -18947,12 +18885,6 @@ snapshots:
       emoji-regex: 8.0.0
       is-fullwidth-code-point: 3.0.0
       strip-ansi: 6.0.1
-
-  string-width@5.1.2:
-    dependencies:
-      eastasianwidth: 0.2.0
-      emoji-regex: 9.2.2
-      strip-ansi: 7.1.2
 
   string-width@7.2.0:
     dependencies:
@@ -19040,14 +18972,14 @@ snapshots:
 
   stylis@4.3.6: {}
 
-  sucrase@3.35.0:
+  sucrase@3.35.1:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.13
       commander: 4.1.1
-      glob: 10.4.5
       lines-and-columns: 1.2.4
       mz: 2.7.0
       pirates: 4.0.7
+      tinyglobby: 0.2.15
       ts-interface-checker: 0.1.13
 
   suf-log@2.5.3:
@@ -19091,38 +19023,11 @@ snapshots:
 
   tailwind-merge@2.6.0: {}
 
-  tailwindcss-animate@1.0.7(tailwindcss@3.3.5):
+  tailwindcss-animate@1.0.7(tailwindcss@3.4.18(yaml@2.8.1)):
     dependencies:
-      tailwindcss: 3.3.5
+      tailwindcss: 3.4.18(yaml@2.8.1)
 
-  tailwindcss@3.3.5:
-    dependencies:
-      '@alloc/quick-lru': 5.2.0
-      arg: 5.0.2
-      chokidar: 3.6.0
-      didyoumean: 1.2.2
-      dlv: 1.1.3
-      fast-glob: 3.3.3
-      glob-parent: 6.0.2
-      is-glob: 4.0.3
-      jiti: 1.21.7
-      lilconfig: 2.1.0
-      micromatch: 4.0.8
-      normalize-path: 3.0.0
-      object-hash: 3.0.0
-      picocolors: 1.1.1
-      postcss: 8.5.6
-      postcss-import: 15.1.0(postcss@8.5.6)
-      postcss-js: 4.1.0(postcss@8.5.6)
-      postcss-load-config: 4.0.2(postcss@8.5.6)
-      postcss-nested: 6.2.0(postcss@8.5.6)
-      postcss-selector-parser: 6.1.2
-      resolve: 1.22.10
-      sucrase: 3.35.0
-    transitivePeerDependencies:
-      - ts-node
-
-  tailwindcss@3.4.17:
+  tailwindcss@3.4.18(yaml@2.8.1):
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -19141,13 +19046,14 @@ snapshots:
       postcss: 8.5.6
       postcss-import: 15.1.0(postcss@8.5.6)
       postcss-js: 4.1.0(postcss@8.5.6)
-      postcss-load-config: 4.0.2(postcss@8.5.6)
+      postcss-load-config: 6.0.1(jiti@1.21.7)(postcss@8.5.6)(yaml@2.8.1)
       postcss-nested: 6.2.0(postcss@8.5.6)
       postcss-selector-parser: 6.1.2
-      resolve: 1.22.10
-      sucrase: 3.35.0
+      resolve: 1.22.11
+      sucrase: 3.35.1
     transitivePeerDependencies:
-      - ts-node
+      - tsx
+      - yaml
 
   tailwindcss@4.1.13: {}
 
@@ -19201,7 +19107,7 @@ snapshots:
 
   throttle-debounce@3.0.1: {}
 
-  tinacms@1.6.7(@babel/core@7.28.4)(@babel/template@7.27.2)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(abstract-level@1.0.4)(jotai-optics@0.4.0(jotai@2.8.4(@types/react@19.1.13)(react@19.1.1))(optics-ts@2.4.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(scheduler@0.26.0)(sucrase@3.35.0)(typescript@5.9.2):
+  tinacms@1.6.7(@babel/core@7.28.4)(@babel/template@7.27.2)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(abstract-level@1.0.4)(jotai-optics@0.4.0(jotai@2.8.4(@types/react@19.1.13)(react@19.1.1))(optics-ts@2.4.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(scheduler@0.26.0)(sucrase@3.35.1)(typescript@5.9.2):
     dependencies:
       '@floating-ui/dom': 1.7.4
       '@floating-ui/react-dom': 2.1.6(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -19213,7 +19119,7 @@ snapshots:
       '@react-hook/window-size': 3.1.1(react@19.1.1)
       '@tinacms/mdx': 1.3.27(react@19.1.1)(typescript@5.9.2)(yup@0.32.11)
       '@tinacms/schema-tools': 1.4.18(react@19.1.1)(yup@0.32.11)
-      '@tinacms/search': 1.0.22(abstract-level@1.0.4)(react@19.1.1)(sucrase@3.35.0)(typescript@5.9.2)(yup@0.32.11)
+      '@tinacms/search': 1.0.22(abstract-level@1.0.4)(react@19.1.1)(sucrase@3.35.1)(typescript@5.9.2)(yup@0.32.11)
       '@tinacms/sharedctx': 1.0.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@udecode/plate-headless': 21.5.1(@babel/core@7.28.4)(@babel/template@7.27.2)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(jotai-optics@0.4.0(jotai@2.8.4(@types/react@19.1.13)(react@19.1.1))(optics-ts@2.4.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(scheduler@0.26.0)(slate-history@0.93.0(slate@0.94.1))(slate-hyperscript@0.77.0(slate@0.94.1))(slate-react@0.97.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(slate@0.94.1))(slate@0.94.1)
       color-string: 1.9.1
@@ -19272,7 +19178,7 @@ snapshots:
       - supports-color
       - typescript
 
-  tinacms@2.8.3(@types/hoist-non-react-statics@3.3.7(@types/react@19.1.13))(@types/node@24.10.1)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(abstract-level@1.0.4)(immer@10.1.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(scheduler@0.26.0)(slate-dom@0.114.0(slate@0.114.0))(slate@0.114.0)(sucrase@3.35.0)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1)):
+  tinacms@2.8.3(@types/hoist-non-react-statics@3.3.7(@types/react@19.1.13))(@types/node@24.10.1)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(abstract-level@1.0.4)(immer@10.1.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(scheduler@0.26.0)(slate-dom@0.114.0(slate@0.114.0))(slate@0.114.0)(sucrase@3.35.1)(typescript@5.9.2)(use-sync-external-store@1.5.0(react@19.1.1)):
     dependencies:
       '@ariakit/react': 0.4.18(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@floating-ui/dom': 1.7.4
@@ -19292,7 +19198,7 @@ snapshots:
       '@react-hook/window-size': 3.1.1(react@19.1.1)
       '@tinacms/mdx': 1.8.1(react@19.1.1)(typescript@5.9.2)(yup@1.7.1)
       '@tinacms/schema-tools': 1.9.1(react@19.1.1)(yup@1.7.1)
-      '@tinacms/search': 1.1.1(abstract-level@1.0.4)(react@19.1.1)(sucrase@3.35.0)(typescript@5.9.2)(yup@1.7.1)
+      '@tinacms/search': 1.1.1(abstract-level@1.0.4)(react@19.1.1)(sucrase@3.35.1)(typescript@5.9.2)(yup@1.7.1)
       '@udecode/cmdk': 0.2.1(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@udecode/cn': 48.0.3(@types/react@19.1.13)(class-variance-authority@0.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(tailwind-merge@2.6.0)
       '@udecode/plate': 48.0.5(@types/react@19.1.13)(immer@10.1.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(scheduler@0.26.0)(slate-dom@0.114.0(slate@0.114.0))(slate@0.114.0)(use-sync-external-store@1.5.0(react@19.1.1))
@@ -19853,7 +19759,7 @@ snapshots:
       fsevents: 2.3.3
       lightningcss: 1.30.1
 
-  vite@6.3.6(@types/node@24.10.1)(jiti@2.6.0)(lightningcss@1.30.1)(yaml@2.8.1):
+  vite@6.3.6(@types/node@24.10.1)(jiti@1.21.7)(lightningcss@1.30.1)(yaml@2.8.1):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
@@ -19864,11 +19770,11 @@ snapshots:
     optionalDependencies:
       '@types/node': 24.10.1
       fsevents: 2.3.3
-      jiti: 2.6.0
+      jiti: 1.21.7
       lightningcss: 1.30.1
       yaml: 2.8.1
 
-  vite@6.4.1(@types/node@24.10.1)(jiti@2.6.0)(lightningcss@1.30.1)(yaml@2.8.1):
+  vite@6.4.1(@types/node@24.10.1)(jiti@1.21.7)(lightningcss@1.30.1)(yaml@2.8.1):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
@@ -19879,13 +19785,13 @@ snapshots:
     optionalDependencies:
       '@types/node': 24.10.1
       fsevents: 2.3.3
-      jiti: 2.6.0
+      jiti: 1.21.7
       lightningcss: 1.30.1
       yaml: 2.8.1
 
-  vitefu@1.1.1(vite@6.4.1(@types/node@24.10.1)(jiti@2.6.0)(lightningcss@1.30.1)(yaml@2.8.1)):
+  vitefu@1.1.1(vite@6.4.1(@types/node@24.10.1)(jiti@1.21.7)(lightningcss@1.30.1)(yaml@2.8.1)):
     optionalDependencies:
-      vite: 6.4.1(@types/node@24.10.1)(jiti@2.6.0)(lightningcss@1.30.1)(yaml@2.8.1)
+      vite: 6.4.1(@types/node@24.10.1)(jiti@1.21.7)(lightningcss@1.30.1)(yaml@2.8.1)
 
   volar-service-css@0.0.62(@volar/language-service@2.4.23):
     dependencies:
@@ -20076,12 +19982,6 @@ snapshots:
       ansi-styles: 4.3.0
       string-width: 4.2.3
       strip-ansi: 6.0.1
-
-  wrap-ansi@8.1.0:
-    dependencies:
-      ansi-styles: 6.2.3
-      string-width: 5.1.2
-      strip-ansi: 7.1.2
 
   wrap-ansi@9.0.2:
     dependencies:
