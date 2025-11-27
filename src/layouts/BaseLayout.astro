@@ -8,11 +8,13 @@ import ProviderTheme from '@/components/blog/ProviderTheme'
 import ProviderAnimations from '@/components/blog/ProviderAnimations'
 import TwSizeIndicator from '@/components/blog/TwSizeIndicator'
 import EditBlog from '@/components/blog/editBlog'
+import PostHog from '@/components/utils/posthog'
 const { title, description, image, articleDate } = Astro.props
 ---
 
 <html lang='en' class='scroll-smooth'>
 	<head>
+		<PostHog />
 		<BaseHead title={title} description={description} ogImage={image} articleDate={articleDate} />
 		<ProviderTheme />
 		<ProviderAnimations />

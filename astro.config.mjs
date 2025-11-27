@@ -1,15 +1,30 @@
-import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
 import { remarkReadingTime } from "./src/utils/readTime.ts";
+import { defineConfig, envField } from "astro/config";
 
 import react from "@astrojs/react";
 
-// https://astro.build/config
 export default defineConfig({
-	site: "https://Brian-Kariu.github.io", // Write here your website url
+	site: "https://Brian-Kariu.github.io",
+	env: {
+		schema: {
+			POSTHOG_API_HOST: envField.string({
+				context: "client",
+				access: "public",
+				optional: false,
+				default: "",
+			}),
+			POSTHOG_API_TOKEN: envField.string({
+				context: "client",
+				access: "public",
+				optional: false,
+				default: "",
+			}),
+		},
+	},
 	base: "/",
 	markdown: {
 		remarkPlugins: [remarkReadingTime],
