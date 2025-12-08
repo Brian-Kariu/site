@@ -34,7 +34,7 @@
 	},
 	"dependencies": {
 		"@astrojs/react": "^4.3.1",
-		"@astrojs/rss": "4.0.12",
+		"@astrojs/rss": "4.0.14",
 		"@eliancodes/brutal-ui": "^0.2.6",
 		"@radix-ui/react-dropdown-menu": "^2.1.16",
 		"@radix-ui/react-label": "^2.1.8",
