@@ -32,35 +32,31 @@ const articleDate = pubDate.toISOString()
 					<p class='text-center text-sm text-opacity-50'>
 						Published <FormattedDate date={pubDate} />
 					</p>
-					<p class='text-center text-sm text-opacity-50 font-bold'>
-						- {readTime}
-					</p>
+					<p class='text-center text-sm text-opacity-50 font-bold'>- {readTime}</p>
 				</div>
-				<h1 class='text-center text-4xl md:text-6xl md:pb-2.5 font-semibold'>
-					{title}
-				</h1>
+				<h1 class='text-center text-4xl md:text-6xl md:pb-2.5 font-semibold'>{title}</h1>
 			</div>
 
 			<div class='flex flex-wrap justify-center items-center gap-2 gap-y-4 md:gap-5'>
-				{tags.map((tag) => <Tag tag={tag} />)}
+				{tags.map((tag) => (
+					<Tag tag={tag} />
+				))}
 			</div>
 		</header>
 
 		<>
-			{
-				heroImage && (
-					<Image
-						src={heroImage}
-						width={1000}
-						height={500}
-						quality={100}
-						format='jpg'
-						loading='eager'
-						class='rounded-md w-full max-h-[300px]  md:max-h-[500px] my-8 object-cover'
-						alt={`img of ${title}`}
-					/>
-				)
-			}
+			{heroImage && (
+				<Image
+					src={heroImage}
+					width={1000}
+					height={500}
+					quality={100}
+					format='jpg'
+					loading='eager'
+					class='rounded-md w-full max-h-[300px] md:max-h-[500px] my-8 object-cover'
+					alt={`img of ${title}`}
+				/>
+			)}
 		</>
 
 		<hr />
