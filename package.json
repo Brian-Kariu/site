@@ -98,11 +98,5 @@
 		"*.{astro,js,jsx,ts,tsx,md,mdx,json}": [
 			"prettier --write"
 		]
-	},
-	"pnpm": {
-		"overrides": {
-			"postcss-selector-parser@<6.1.5": "^6.1.6",
-			"qs@>=6.7.0 <6.16.1": "^6.16.1"
-		}
 	}
 }
