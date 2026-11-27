@@ -72,7 +72,7 @@
 		"@pagefind/default-ui": "^1.5.2",
 		"@tailwindcss/typography": "0.5.19",
 		"@tinacms/cli": "^3.0.0",
-		"@typescript-eslint/parser": "^8.57.1",
+		"@typescript-eslint/parser": "^8.74.0",
 		"autoprefixer": "^10.5.0",
 		"clsx": "2.0.0",
 		"embla-carousel-react": "^8.6.0",
@@ -99,5 +99,11 @@
 		"*.{astro,js,jsx,ts,tsx,md,mdx,json}": [
 			"prettier --write --plugin-search-dir=."
 		]
+	},
+	"pnpm": {
+		"overrides": {
+			"postcss-selector-parser@<6.1.5": "^6.1.6",
+			"qs@>=6.7.0 <6.16.1": "^6.16.1"
+		}
 	}
 }
