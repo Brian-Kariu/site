@@ -1,9 +1,9 @@
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
-import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
 import { remarkReadingTime } from "./src/utils/readTime.ts";
 import { defineConfig, envField } from "astro/config";
+import { unified } from "@astrojs/markdown-remark";
 
 import react from "@astrojs/react";
 
@@ -27,7 +27,7 @@ export default defineConfig({
 	},
 	base: "/",
 	markdown: {
-		remarkPlugins: [remarkReadingTime],
+		processor: unified({ remarkPlugins: [remarkReadingTime] }),
 		drafts: true,
 		shikiConfig: {
 			theme: "material-theme-palenight",
@@ -48,7 +48,6 @@ export default defineConfig({
 		}),
 		sitemap(),
 		icon(),
-		tailwind(),
 		react(),
 	],
 });
