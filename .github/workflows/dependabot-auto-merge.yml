@@ -1,0 +1,46 @@
+name: Dependabot auto-merge
+
+# Builds Dependabot PRs and merges minor/patch updates when the build passes.
+# Major updates are left open for manual review.
+on: pull_request
+
+permissions: {}
+
+jobs:
+  build:
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    # Read-only: this job installs and runs the PR's dependencies.
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 10
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+
+  merge:
+    needs: build
+    runs-on: ubuntu-latest
+    # Write access, but never checks out or runs PR code.
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - id: meta
+        uses: dependabot/fetch-metadata@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - if: steps.meta.outputs.update-type != 'version-update:semver-major'
+        run: gh pr merge --merge --delete-branch "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
