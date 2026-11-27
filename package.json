@@ -61,7 +61,6 @@
 		"postcss": "^8.5.23",
 		"react": "^19.2.1",
 		"react-dom": "^19.2.1",
-		"react-resizable-panels": "^3.0.6",
 		"sharp": "^0.35.5",
 		"tailwindcss-animate": "^1.0.7"
 	},
