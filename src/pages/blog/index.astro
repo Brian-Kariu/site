@@ -27,12 +27,8 @@ const posts = await getPosts(MAX_POSTS)
 		animate(
 			'.title',
 			{ y: [80, 0], opacity: [0, 1] },
-			{
-				duration: 2.5,
-				opacity: { duration: 3 },
-
-				offset: [0, 0.55, 0.75]
-			}
+			// Timing measured from the motion 10 build so the entrance looks the same.
+			{ duration: 0.9, ease: 'easeInOut', opacity: { duration: 1.05, ease: 'easeInOut' } }
 		)
 	}
 </script>
