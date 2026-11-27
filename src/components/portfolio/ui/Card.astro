@@ -39,9 +39,7 @@ const isVisible = link ? true : false
 ---
 
 <section class='w-full h-full'>
-	<Card
-		className='w-full h-full bg-card-foreground dark:bg-card transform transition-transform hover:scale-105'
-	>
+	<Card className='w-full h-full bg-card-foreground dark:bg-card transform transition-transform hover:scale-105'>
 		<CardHeader>
 			<h1 class='text-base 2xs:text-lg xs:text-xl text-orange dark:text-destructive'>{title}</h1>
 			<code class='text-xs dark:text-white'>{category}</code>
@@ -49,16 +47,14 @@ const isVisible = link ? true : false
 		<CardContent>
 			<p class='mb-3 2xs:mb-4 text-xs 2xs:text-sm dark:text-white'>{description}</p>
 			<div class='flex flex-wrap gap-1.5 2xs:gap-2 mb-3 2xs:mb-4'>
-				{
-					tags.map((tech, index) => (
-						<Badge
-							key={index}
-							className='flex justify-center bg-yellow-200 dark:bg-yellow-600 text-black dark:text-white text-[10px] 2xs:text-xs text-center px-1.5 2xs:px-2'
-						>
-							{tech}
-						</Badge>
-					))
-				}
+				{tags.map((tech, index) => (
+					<Badge
+						key={index}
+						className='flex justify-center bg-yellow-200 dark:bg-yellow-600 text-black dark:text-white text-[10px] 2xs:text-xs text-center px-1.5 2xs:px-2'
+					>
+						{tech}
+					</Badge>
+				))}
 			</div>
 		</CardContent>
 		<CardFooter className='flex-col gap-2'>
